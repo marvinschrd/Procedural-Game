@@ -17,12 +17,12 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetButtonDown("Fire1")&&normalAttack!=null)
         {
             anim.SetTrigger("Attacking");
            
         }
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2")&&HeavyAttack !=null)
         {
             anim.SetTrigger("HeavyAttacking");
         }
