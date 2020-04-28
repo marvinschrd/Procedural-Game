@@ -106,43 +106,43 @@ TextureImporter:
     second: normal_attack7
   - first:
       213: -3645127700545405042
-    second: Cyclops Sprite Sheet_34
+    second: Throw1
   - first:
       213: -8067189743260656894
-    second: Cyclops Sprite Sheet_35
+    second: Throw2
   - first:
       213: -5077774704908403826
-    second: Cyclops Sprite Sheet_36
+    second: Throw3
   - first:
       213: -6600943961722012477
-    second: Cyclops Sprite Sheet_37
+    second: Throw4
   - first:
       213: -23491285653752743
-    second: Cyclops Sprite Sheet_38
+    second: Throw5
   - first:
       213: 3694854946262025621
-    second: Cyclops Sprite Sheet_39
+    second: Throw6
   - first:
       213: -1356495981897768089
-    second: Cyclops Sprite Sheet_40
+    second: Throw7
   - first:
       213: 8514027213867244238
-    second: Cyclops Sprite Sheet_41
+    second: Throw9
   - first:
       213: -7809337327905133404
-    second: Cyclops Sprite Sheet_42
+    second: Throw10
   - first:
       213: -5552577342795160008
-    second: Cyclops Sprite Sheet_43
+    second: Throw11
   - first:
       213: 2474534843458684198
-    second: Cyclops Sprite Sheet_44
+    second: Throw12
   - first:
       213: -5827175312866283487
-    second: Cyclops Sprite Sheet_45
+    second: Throw13
   - first:
       213: -4131177524032746921
-    second: Cyclops Sprite Sheet_46
+    second: Throw14
   - first:
       213: 8939093673976582699
     second: Cyclops Sprite Sheet_47
@@ -208,22 +208,22 @@ TextureImporter:
     second: Cyclops Sprite Sheet_67
   - first:
       213: -1698791438063407617
-    second: Cyclops Sprite Sheet_68
+    second: Laser1
   - first:
       213: -4629365783648280947
-    second: Cyclops Sprite Sheet_69
+    second: Laser2
   - first:
       213: 5889186414561326044
-    second: Cyclops Sprite Sheet_70
+    second: Laser3
   - first:
       213: 8950012330137054932
-    second: Cyclops Sprite Sheet_71
+    second: Laser4
   - first:
       213: 4392265615306747422
-    second: Cyclops Sprite Sheet_72
+    second: Laser5
   - first:
       213: 6476762079464886434
-    second: Cyclops Sprite Sheet_73
+    second: Laser6
   - first:
       213: 4690892691551202279
     second: Cyclops Sprite Sheet_74
@@ -464,6 +464,21 @@ TextureImporter:
   - first:
       213: -4760401499832669485
     second: Cyclops Sprite Sheet_153
+  - first:
+      213: 8145111226093814317
+    second: Cyclops Sprite Sheet_154
+  - first:
+      213: 25501274426723438
+    second: Cyclops Sprite Sheet_155
+  - first:
+      213: -1549890960371505527
+    second: Cyclops Sprite Sheet_156
+  - first:
+      213: -1121487260270439894
+    second: Cyclops Sprite Sheet_157
+  - first:
+      213: 886316388682881085
+    second: Cyclops Sprite Sheet_158
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -601,9 +616,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 1214
-        width: 27
-        height: 40
+        y: 1216
+        width: 24
+        height: 39
       alignment: 9
       pivot: {x: 0.5457966, y: 0.5140913}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -686,7 +701,7 @@ TextureImporter:
         serializedVersion: 2
         x: 275
         y: 1216
-        width: 25
+        width: 24
         height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -705,10 +720,10 @@ TextureImporter:
       name: Idle6
       rect:
         serializedVersion: 2
-        x: 340
+        x: 339
         y: 1216
-        width: 27
-        height: 42
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -728,8 +743,8 @@ TextureImporter:
         serializedVersion: 2
         x: 403
         y: 1216
-        width: 25
-        height: 39
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -749,8 +764,8 @@ TextureImporter:
         serializedVersion: 2
         x: 467
         y: 1216
-        width: 25
-        height: 39
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -770,7 +785,7 @@ TextureImporter:
         serializedVersion: 2
         x: 531
         y: 1216
-        width: 26
+        width: 25
         height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -791,7 +806,7 @@ TextureImporter:
         serializedVersion: 2
         x: 595
         y: 1216
-        width: 23
+        width: 24
         height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -810,9 +825,9 @@ TextureImporter:
       name: Idle11
       rect:
         serializedVersion: 2
-        x: 660
+        x: 659
         y: 1216
-        width: 24
+        width: 25
         height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1251,9 +1266,9 @@ TextureImporter:
       name: normal_attack5
       rect:
         serializedVersion: 2
-        x: 273
+        x: 272
         y: 1088
-        width: 27
+        width: 28
         height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1311,7 +1326,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_34
+      name: Throw1
       rect:
         serializedVersion: 2
         x: 19
@@ -1332,13 +1347,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_35
+      name: Throw2
       rect:
         serializedVersion: 2
         x: 85
         y: 1024
         width: 22
-        height: 33
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1353,13 +1368,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_36
+      name: Throw3
       rect:
         serializedVersion: 2
         x: 149
         y: 1024
         width: 24
-        height: 29
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1374,13 +1389,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_37
+      name: Throw4
       rect:
         serializedVersion: 2
         x: 213
         y: 1024
         width: 24
-        height: 30
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1395,13 +1410,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_38
+      name: Throw5
       rect:
         serializedVersion: 2
         x: 277
         y: 1024
         width: 22
-        height: 33
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1416,13 +1431,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_39
+      name: Throw6
       rect:
         serializedVersion: 2
         x: 339
         y: 1024
         width: 24
-        height: 37
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1437,13 +1452,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_40
+      name: Throw7
       rect:
         serializedVersion: 2
         x: 402
         y: 1024
         width: 27
-        height: 37
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1458,13 +1473,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_41
+      name: Throw9
       rect:
         serializedVersion: 2
         x: 466
         y: 1024
         width: 27
-        height: 38
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1479,7 +1494,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_42
+      name: Throw10
       rect:
         serializedVersion: 2
         x: 532
@@ -1500,7 +1515,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_43
+      name: Throw11
       rect:
         serializedVersion: 2
         x: 592
@@ -1521,7 +1536,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_44
+      name: Throw12
       rect:
         serializedVersion: 2
         x: 655
@@ -1542,13 +1557,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_45
+      name: Throw13
       rect:
         serializedVersion: 2
         x: 727
-        y: 1024
+        y: 1025
         width: 30
-        height: 38
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1563,13 +1578,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_46
+      name: Throw14
       rect:
         serializedVersion: 2
         x: 791
         y: 1024
         width: 31
-        height: 37
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2025,13 +2040,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_68
+      name: Laser1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 666
-        width: 24
-        height: 76
+        x: 20
+        y: 704
+        width: 23
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2046,13 +2061,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_69
+      name: Laser2
       rect:
         serializedVersion: 2
         x: 82
-        y: 669
-        width: 25
-        height: 73
+        y: 704
+        width: 26
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2067,7 +2082,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_70
+      name: Laser3
       rect:
         serializedVersion: 2
         x: 144
@@ -2088,7 +2103,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_71
+      name: Laser4
       rect:
         serializedVersion: 2
         x: 206
@@ -2109,13 +2124,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_72
+      name: Laser5
       rect:
         serializedVersion: 2
         x: 272
         y: 704
         width: 27
-        height: 33
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2130,13 +2145,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyclops Sprite Sheet_73
+      name: Laser6
       rect:
         serializedVersion: 2
         x: 335
         y: 704
         width: 30
-        height: 32
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2158,8 +2173,8 @@ TextureImporter:
         y: 666
         width: 13
         height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.23625535, y: 0.48046404}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2176,11 +2191,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 221
-        y: 664
-        width: 99
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 666
+        width: 36
+        height: 3
+      alignment: 9
+      pivot: {x: 0.022048103, y: 0.49995932}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2200,8 +2215,8 @@ TextureImporter:
         y: 665
         width: 35
         height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.016034808, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2218,11 +2233,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 413
-        y: 576
-        width: 99
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 665
+        width: 36
+        height: 3
+      alignment: 9
+      pivot: {x: 0.0066375732, y: 0.5548096}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3826,6 +3841,111 @@ TextureImporter:
       bones: []
       spriteID: 3daac3ebe08afedb0800000000000000
       internalID: -4760401499832669485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_154
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 665
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d224e57618f390170800000000000000
+      internalID: 8145111226093814317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_155
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 666
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c468326499a5000800000000000000
+      internalID: 25501274426723438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_156
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 664
+        width: 36
+        height: 5
+      alignment: 9
+      pivot: {x: 0.029478285, y: 0.5657837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986a77a126ead7ae0800000000000000
+      internalID: -1549890960371505527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_157
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 664
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a225477574daf60f0800000000000000
+      internalID: -1121487260270439894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_158
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 666
+        width: 36
+        height: 3
+      alignment: 9
+      pivot: {x: 0.015774198, y: 0.5548096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38dc024f04dc4c00800000000000000
+      internalID: 886316388682881085
       vertices: []
       indices: 
       edges: []
