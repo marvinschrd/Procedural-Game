@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5223335674348220122}
   m_Layer: 0
   m_Name: Cyclop
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,8 +120,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.08289075, y: 0.03012693}
-  m_Size: {x: 0.8527961, y: 1.4202539}
+  m_Offset: {x: -0.054082632, y: -0.48977625}
+  m_Size: {x: 0.56471467, y: 0.56471467}
   m_Direction: 0
 --- !u!50 &5223335674348220120
 Rigidbody2D:
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -203,6 +203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496034135894013014, guid: e6c806aaff5debe468144869e1e07b54,
+        type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5496034135894013015, guid: e6c806aaff5debe468144869e1e07b54,
         type: 3}
