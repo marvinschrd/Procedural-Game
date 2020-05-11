@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5535068014267371793}
   - component: {fileID: 4531282786916433697}
   - component: {fileID: -8339718164090748009}
+  - component: {fileID: 2328454800418115141}
   m_Layer: 0
   m_Name: room8
   m_TagString: Untagged
@@ -144,3 +145,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxColliderSize: 1.8
+  timeForRoomsToStop: 0
+--- !u!58 &2328454800418115141
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278122549640513745}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1

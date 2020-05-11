@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5778299421836055069}
   - component: {fileID: -886312307332535950}
   - component: {fileID: -3147098956747534413}
+  - component: {fileID: -7107711295201241575}
   m_Layer: 0
   m_Name: room7
   m_TagString: Untagged
@@ -28,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726803794347007693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.691, y: -6.497, z: 0}
-  m_LocalScale: {x: 1.7360916, y: 9.060395, z: 1}
+  m_LocalPosition: {x: -7.212, y: -8.687, z: 0}
+  m_LocalScale: {x: 2.6947565, y: 4.6804333, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -144,3 +145,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxColliderSize: 1.8
+  timeForRoomsToStop: 0
+--- !u!58 &-7107711295201241575
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726803794347007693}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
