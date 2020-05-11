@@ -13,13 +13,12 @@ GameObject:
   - component: {fileID: 972266955977186947}
   - component: {fileID: 972266955977186944}
   - component: {fileID: 972266955977186945}
-  - component: {fileID: 3171471316232717759}
   - component: {fileID: 3171471315473038718}
   - component: {fileID: 3171471315473038713}
   - component: {fileID: 3171471315473038689}
   m_Layer: 0
   m_Name: EnemyDwarf
-  m_TagString: Untagged
+  m_TagString: ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,20 +146,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3171471316232717759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972266955977186958}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bb33ec4db7a124fbafcc0b0d6449b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normalAttack: {fileID: 8599570817828906824}
-  HeavyAttack: {fileID: 9186153224872664871}
 --- !u!58 &3171471315473038718
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -190,6 +175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  playablePrefab: {fileID: 2413221310099265061, guid: 6d99bc10a66dec341b14fffd3b90b82b,
+    type: 3}
 --- !u!114 &3171471315473038689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,12 +276,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6bb8769ba0f33c4da2fbf571c92a303, type: 3}
---- !u!1 &8599570817828906824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6581030379675870551, guid: f6bb8769ba0f33c4da2fbf571c92a303,
-    type: 3}
-  m_PrefabInstance: {fileID: 3171471315054068255}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8599570817828906826 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6581030379675870549, guid: f6bb8769ba0f33c4da2fbf571c92a303,
@@ -410,12 +391,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6c806aaff5debe468144869e1e07b54, type: 3}
---- !u!1 &9186153224872664871 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5496034135894013013, guid: e6c806aaff5debe468144869e1e07b54,
-    type: 3}
-  m_PrefabInstance: {fileID: 3692406737915751282}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9186153224872664869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5496034135894013015, guid: e6c806aaff5debe468144869e1e07b54,
