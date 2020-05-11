@@ -18,6 +18,8 @@ public class EnemyController : MonoBehaviour
 
     float xVelocity = 0;
     float yVelocity = 0;
+
+    [SerializeField]  GameObject playablePrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -73,5 +75,11 @@ public class EnemyController : MonoBehaviour
             player = collision.gameObject.transform;
             follow = true;
         }
+    }
+
+    public void InstatiatePlayablePrefab()
+    {
+        Instantiate(playablePrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
