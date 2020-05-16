@@ -90,7 +90,7 @@ public class RoomSpawner : MonoBehaviour
                     float yPosition = Mathf.Round(roomsSpawned[i].transform.position.y);
                     roomsSpawned[i].transform.position = new Vector3(xPosition, yPosition, 0);
                     //room.FixPosition();
-                    Debug.Log(roomsSpawned[i].transform.position);
+                   // Debug.Log(roomsSpawned[i].transform.position);
                     step = Step.STOP;
                 }
                 break;

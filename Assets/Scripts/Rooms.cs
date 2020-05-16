@@ -25,6 +25,12 @@ public class Rooms : MonoBehaviour
 
     List<Transform> neighbours;
 
+
+
+    [SerializeField] GameObject wallBlockPrefab;
+    bool placeWall = true;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +43,8 @@ public class Rooms : MonoBehaviour
         //colliderXSize = Random.Range(1f, maxColliderSize);
         //collider = GetComponent<BoxCollider2D>();
         //collider.size = new Vector2(colliderXSize, colliderYSize);
+
+        
     }
 
     enum Step
@@ -53,6 +61,16 @@ public class Rooms : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timerForRooms -= Time.deltaTime;
+        if (placeWall && timerForRooms<=0)
+        {
+            placeWall = false;
+            Destroy(collider);
+            SpawnLeftWall();
+            SpawnRightWall();
+            SpawnUpWall();
+            SpawnDownWall();
+        }
 
         //switch(step)
         //{
@@ -132,6 +150,98 @@ public class Rooms : MonoBehaviour
     //{
     //    Gizmos.DrawLine(transform.position, closestRoom.position);
     //}
+
+
+        void SpawnLeftWall()
+    {
+        if (wallBlockPrefab != null)
+        {
+            float blockSize = wallBlockPrefab.transform.localScale.x;
+            float roomHeight = transform.localScale.y ;
+            float roomWidth = transform.localScale.x ;
+
+            float numberOfWallToSpawn = roomHeight ;
+
+            Debug.Log("room position" + transform.position.x);
+
+            for (int i = 0; i < numberOfWallToSpawn*2+1; i++)
+            {
+               
+                Instantiate(wallBlockPrefab, new Vector3(transform.position.x - (roomWidth/2), transform.position.y+(roomHeight/2) + i * (-0.5f), -1), Quaternion.identity);
+               // wallBlockPrefab.transform.parent = gameObject.transform;
+            }
+                Debug.Log(transform.position.x - (roomWidth / 2));
+        }
+
+        
+        
+    }
+
+    void SpawnRightWall()
+    {
+        if (wallBlockPrefab != null)
+        {
+            float blockSize = wallBlockPrefab.transform.localScale.x;
+            float roomHeight = transform.localScale.y;
+            float roomWidth = transform.localScale.x;
+
+            float numberOfWallToSpawn = roomHeight ;
+
+            Debug.Log("room position" + transform.position.x);
+
+            for (int i = 0; i < numberOfWallToSpawn *2+1 ; i++)
+            {
+                
+               Instantiate(wallBlockPrefab, new Vector3(transform.position.x + (roomWidth / 2), transform.position.y + (roomHeight / 2) + i * (-0.5f), -1), Quaternion.identity);
+                wallBlockPrefab.transform.parent = gameObject.transform;
+            }
+            Debug.Log(transform.position.x - (roomWidth / 2));
+        }
+    }
+
+    void SpawnUpWall()
+    {
+        if (wallBlockPrefab != null)
+        {
+            float blockSize = wallBlockPrefab.transform.localScale.x;
+            float roomHeight = transform.localScale.y;
+            float roomWidth = transform.localScale.x;
+
+            float numberOfWallToSpawn = roomWidth;
+
+            Debug.Log("room position" + transform.position.x);
+
+            for (int i = 0; i < numberOfWallToSpawn * 1f + 1; i++)
+            {
+                
+                Instantiate(wallBlockPrefab, new Vector3(transform.position.x + (roomWidth / 2) + i * (-1f), transform.position.y + (roomHeight / 2), -1), Quaternion.identity);
+                wallBlockPrefab.transform.parent = gameObject.transform;
+            }
+            Debug.Log(transform.position.x - (roomWidth / 2));
+        }
+    }
+
+    void SpawnDownWall()
+    {
+        if (wallBlockPrefab != null)
+        {
+            float blockSize = wallBlockPrefab.transform.localScale.x;
+            float roomHeight = transform.localScale.y;
+            float roomWidth = transform.localScale.x;
+
+            float numberOfWallToSpawn = roomWidth;
+
+            Debug.Log("room position" + transform.position.x);
+
+            for (int i = 0; i < numberOfWallToSpawn * 1 + 1; i++)
+            {
+                
+               Instantiate(wallBlockPrefab, new Vector3(transform.position.x + (roomWidth / 2) + i * (-1f), transform.position.y - (roomHeight / 2), -1), Quaternion.identity);
+                wallBlockPrefab.transform.parent = gameObject.transform;
+            }
+            Debug.Log(transform.position.x - (roomWidth / 2));
+        }
+    }
 
     
     public void FixPosition()

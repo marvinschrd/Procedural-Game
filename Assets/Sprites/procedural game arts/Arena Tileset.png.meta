@@ -44,6 +44,12 @@ TextureImporter:
   - first:
       213: 3705796495848498532
     second: Arena Tileset_13
+  - first:
+      213: -6429728022266865118
+    second: Arena Tileset_14
+  - first:
+      213: -4755193609791689044
+    second: Arena Tileset_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -87,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 80
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -408,27 +414,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arena Tileset_11
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 482
-        width: 24
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56109d825393d7e80800000000000000
-      internalID: -8179318447753592475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Arena Tileset_12
       rect:
         serializedVersion: 2
@@ -458,7 +443,7 @@ TextureImporter:
         width: 17
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,6 +451,48 @@ TextureImporter:
       bones: []
       spriteID: 465efe06742ad6330800000000000000
       internalID: 3705796495848498532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arena Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 420
+        width: 80
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a986e0e6405c6a0800000000000000
+      internalID: -6429728022266865118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arena Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 508
+        width: 80
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caea8222b98220eb0800000000000000
+      internalID: -4755193609791689044
       vertices: []
       indices: 
       edges: []
