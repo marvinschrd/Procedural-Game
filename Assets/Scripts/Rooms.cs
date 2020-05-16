@@ -12,6 +12,7 @@ public class Rooms : MonoBehaviour
     [SerializeField] float timeForRoomsToStop = 0;
     float timerForRooms = 4f;
     bool stopped = false;
+    bool startTimer = false;
 
     List<Transform> aroundRoomsPosition;
 
@@ -19,10 +20,18 @@ public class Rooms : MonoBehaviour
 
     [SerializeField] float circleCastRadius = 0;
 
+    RoomSpawner RoomSpawner;
+    bool canStart = false;
+
+    List<Transform> neighbours;
+
     // Start is called before the first frame update
     void Start()
     {
-       // aroundRoomsPosition = new List<Transform>();
+        RoomSpawner = FindObjectOfType<RoomSpawner>();
+        collider = GetComponent<BoxCollider2D>();
+        neighbours = new List<Transform>();
+        // aroundRoomsPosition = new List<Transform>();
 
         //colliderYSize = Random.Range(1f, maxColliderSize);
         //colliderXSize = Random.Range(1f, maxColliderSize);
@@ -30,13 +39,60 @@ public class Rooms : MonoBehaviour
         //collider.size = new Vector2(colliderXSize, colliderYSize);
     }
 
+    enum Step
+    {
+        WAITING,
+        GET_NEIGHBOURS,
+        CHECK_COLLISIONS,
+        DELETE_COMPONENTS,
+        OPEN_WALLS
+    }
+
+    Step step = Step.WAITING;
+
     // Update is called once per frame
     void Update()
     {
-        timerForRooms -= Time.deltaTime;
-        if (timerForRooms <= 0)
+
+        //switch(step)
+        //{
+        //    case Step.WAITING:
+        //        if(canStart)
+        //        {
+        //            step = Step.GET_NEIGHBOURS;
+        //        }
+        //        break;
+        //    case Step.GET_NEIGHBOURS:
+        //        Vector2 colliderSize = new Vector2(collider.size.x, collider.size.y);
+        //        circleCastRadius = colliderSize.magnitude;
+        //        RaycastHit2D[] hits = Physics2D.CircleCastAll(gameObject.transform.position, circleCastRadius, Vector2.zero);
+        //        foreach (RaycastHit2D hit in hits)
+        //        {
+        //            if (hit.collider != gameObject.GetComponent<BoxCollider2D>())
+        //            {
+        //                neighbours.Add(hit.transform);
+        //            }
+        //        }
+        //        step = Step.CHECK_COLLISIONS;
+        //        break;
+        //    case Step.CHECK_COLLISIONS:
+        //        // mettre en place la detection des points de collisions pour calculer le point ou ouvrir l'accès
+        //        break;
+        //}
+
+        if (startTimer)
         {
-            stopped = true;
+            timerForRooms -= Time.deltaTime;
+            if (timerForRooms <= 0)
+            {
+                //stopped = true;
+                float newXPosition;
+                float newYPosition;
+                newXPosition = Mathf.Round(transform.position.x);
+                newYPosition = Mathf.Round(transform.position.y);
+                transform.position = new Vector3(newXPosition, newYPosition, 0);
+                startTimer = false;
+            }
         }
         //FixPosition();
         //float newXPosition;
@@ -72,23 +128,16 @@ public class Rooms : MonoBehaviour
         
     }
 
-    private void OnDrawGizmos()
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawLine(transform.position, closestRoom.position);
+    //}
+
+    
+    public void FixPosition()
     {
-        Gizmos.DrawLine(transform.position, closestRoom.position);
-    }
-    void FixPosition()
-    {
-        if(stopped)
-        {
-            float newXPosition;
-            float newYPosition;
-            newXPosition = Mathf.Round(transform.position.x);
-            newYPosition = Mathf.Round(transform.position.y);
-            transform.position = new Vector3(newXPosition, newYPosition, 0);
-            
-            Mathf.Round(transform.position.y);
-            Debug.Log("fixed");
-            stopped = false;
-        }
+        startTimer = true;
+       
+        
     }
 }
