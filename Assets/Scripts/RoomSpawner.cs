@@ -21,6 +21,7 @@ public class RoomSpawner : MonoBehaviour
 
     [SerializeField] float waitingTime = 3;
     float waitingTimer = 0;
+    float timeToAdd = 0;
 
   struct Node
     {
@@ -74,7 +75,7 @@ public class RoomSpawner : MonoBehaviour
                 step = Step.ORDER_ROOMS_BY_DYSTANCE_FROM_CENTER;
                 break;
             case Step.ORDER_ROOMS_BY_DYSTANCE_FROM_CENTER:
-                roomsSpawned.Sort(SortByDistanceToCenter);
+               roomsSpawned.Sort(SortByDistanceToCenter);
                 waitingTime -= Time.deltaTime;
                 if(waitingTime<=0)
                 {
@@ -84,15 +85,21 @@ public class RoomSpawner : MonoBehaviour
             case Step.LOCK_ROOMS_POSITON_BY_ORDER:
                 for (int i = 0; i < roomsSpawned.Count; i++)
                 {
-                    // Rooms room = roomsSpawned[i].GetComponent<Rooms>();
+                    
+                    Debug.Log("NOW BLOCKING");
                     Debug.Log(roomsSpawned[i].gameObject.name);
-                    float xPosition = Mathf.Round(roomsSpawned[i].transform.position.x);
-                    float yPosition = Mathf.Round(roomsSpawned[i].transform.position.y);
-                    roomsSpawned[i].transform.position = new Vector3(xPosition, yPosition, 0);
-                    //room.FixPosition();
-                   // Debug.Log(roomsSpawned[i].transform.position);
-                    step = Step.STOP;
+                    Rooms room = roomsSpawned[i].GetComponent<Rooms>();
+                  // room.FixPosition(timeToAdd);
+                    timeToAdd += 2f;
+                    //Debug.Log(roomsSpawned[i].gameObject.name);
+
+                    //Debug.Log(roomsSpawned[i].transform.position);
+                   
                 }
+                    step = Step.STOP;
+                    //float xPosition = Mathf.Round(roomsSpawned[i].transform.position.x);
+                    //float yPosition = Mathf.Round(roomsSpawned[i].transform.position.y);
+                    //roomsSpawned[i].transform.position = new Vector3(xPosition, yPosition, 0);
                 break;
             case Step.STOP:
                 Debug.Log("STOP");
@@ -170,14 +177,14 @@ public class RoomSpawner : MonoBehaviour
     {
         while(roomsToSpawn.Count>2)
         {
-            Instantiate(roomsToSpawn[0], spawnPosition, Quaternion.identity);
-            roomsSpawned.Add(roomsToSpawn[0]);
+           roomsSpawned.Add( Instantiate(roomsToSpawn[0], spawnPosition, Quaternion.identity));
+            //roomsSpawned.Add(roomsToSpawn[0]);
             roomsToSpawn.RemoveAt(0);
         }
         while (roomsToSpawn.Count > 0)
         {
-            Instantiate(roomsToSpawn[0], secondSpawnPosition, Quaternion.identity);
-            roomsSpawned.Add(roomsToSpawn[0]);
+            roomsSpawned.Add(Instantiate(roomsToSpawn[0], spawnPosition, Quaternion.identity));
+           // roomsSpawned.Add(roomsToSpawn[0]);
             roomsToSpawn.RemoveAt(0);
         }
     }

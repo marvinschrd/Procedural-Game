@@ -5,12 +5,14 @@ using UnityEngine;
 public class Rooms : MonoBehaviour
 {
     BoxCollider2D collider;
+    Rigidbody2D body;
     float colliderYSize = 1f;
     float colliderXSize = 1f;
     [SerializeField] float maxColliderSize = 3f;
 
     [SerializeField] float timeForRoomsToStop = 0;
-    float timerForRooms = 4f;
+    float timerForRooms = 6f;
+    float timerForPositionFix = 2f;
     bool stopped = false;
     bool startTimer = false;
 
@@ -35,8 +37,13 @@ public class Rooms : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       // Debug.Break();
+        Debug.Log("PREFAB CREE");
+
         RoomSpawner = FindObjectOfType<RoomSpawner>();
         collider = GetComponent<BoxCollider2D>();
+        //body = GetComponent<Rigidbody2D>();
+       
         neighbours = new List<Transform>();
         // aroundRoomsPosition = new List<Transform>();
 
@@ -67,11 +74,28 @@ public class Rooms : MonoBehaviour
         if (placeWall && timerForRooms<=0)
         {
             placeWall = false;
-            Destroy(collider);
+           
             SpawnUpWall();
             SpawnLeftWall();
             SpawnRightWall();
             SpawnDownWall();
+        }
+        if (startTimer)
+        {
+                Debug.Log("FIXED_POSITION");
+            timerForPositionFix -= Time.deltaTime;
+            if (timerForPositionFix<=0&&!stopped)
+            {
+                //stopped = true;
+                float newXPosition;
+                float newYPosition;
+                newXPosition = Mathf.Round(transform.position.x);
+                newYPosition = Mathf.Round(transform.position.y);
+                transform.position = new Vector3(newXPosition, newYPosition, 0);
+                Destroy(body);
+                stopped = true;
+                startTimer = false;
+            }
         }
 
         //switch(step)
@@ -100,20 +124,7 @@ public class Rooms : MonoBehaviour
         //        break;
         //}
 
-        if (startTimer)
-        {
-            timerForRooms -= Time.deltaTime;
-            if (timerForRooms <= 0)
-            {
-                //stopped = true;
-                float newXPosition;
-                float newYPosition;
-                newXPosition = Mathf.Round(transform.position.x);
-                newYPosition = Mathf.Round(transform.position.y);
-                transform.position = new Vector3(newXPosition, newYPosition, 0);
-                startTimer = false;
-            }
-        }
+        
         //FixPosition();
         //float newXPosition;
         //float newYPosition;
@@ -164,7 +175,7 @@ public class Rooms : MonoBehaviour
 
             float numberOfWallToSpawn = roomHeight ;
 
-            Debug.Log("room position" + transform.position.x);
+           // Debug.Log("room position" + transform.position.x);
 
             for (int i = 0; i < numberOfWallToSpawn*2+1; i++)
             {
@@ -172,7 +183,7 @@ public class Rooms : MonoBehaviour
                 Instantiate(wallBlockPrefab, new Vector3(transform.position.x - (roomWidth/2), transform.position.y+(roomHeight/2) + i * (-0.5f), -1), Quaternion.identity);
                // wallBlockPrefab.transform.parent = gameObject.transform;
             }
-                Debug.Log(transform.position.x - (roomWidth / 2));
+               // Debug.Log(transform.position.x - (roomWidth / 2));
         }
 
         
@@ -189,15 +200,15 @@ public class Rooms : MonoBehaviour
 
             float numberOfWallToSpawn = roomHeight ;
 
-            Debug.Log("room position" + transform.position.x);
+           // Debug.Log("room position" + transform.position.x);
 
             for (int i = 0; i < numberOfWallToSpawn *2+1 ; i++)
             {
                 
                Instantiate(wallBlockPrefab, new Vector3(transform.position.x + (roomWidth / 2), transform.position.y + (roomHeight / 2) + i * (-0.5f), -1), Quaternion.identity);
-                wallBlockPrefab.transform.parent = gameObject.transform;
+               // wallBlockPrefab.transform.parent = gameObject.transform;
             }
-            Debug.Log(transform.position.x - (roomWidth / 2));
+            //Debug.Log(transform.position.x - (roomWidth / 2));
         }
     }
 
@@ -211,7 +222,7 @@ public class Rooms : MonoBehaviour
 
             float numberOfWallToSpawn = roomWidth;
 
-            Debug.Log("room position" + transform.position.x);
+            //Debug.Log("room position" + transform.position.x);
 
             for (int i = 0; i < numberOfWallToSpawn * 1f + 1; i++)
             {
@@ -220,9 +231,9 @@ public class Rooms : MonoBehaviour
 
                 
                 Instantiate(DifferentWallBlocks[index], new Vector3(transform.position.x + (roomWidth / 2) + i * (-1f), transform.position.y + (roomHeight / 2), -1), Quaternion.identity);
-                wallBlockPrefab.transform.parent = gameObject.transform;
+               // wallBlockPrefab.transform.parent = gameObject.transform;
             }
-            Debug.Log(transform.position.x - (roomWidth / 2));
+           // Debug.Log(transform.position.x - (roomWidth / 2));
         }
     }
 
@@ -236,23 +247,37 @@ public class Rooms : MonoBehaviour
 
             float numberOfWallToSpawn = roomWidth;
 
-            Debug.Log("room position" + transform.position.x);
+            //Debug.Log("room position" + transform.position.x);
 
             for (int i = 0; i < numberOfWallToSpawn * 1 + 1; i++)
             {
                 
                Instantiate(wallBlockPrefab, new Vector3(transform.position.x + (roomWidth / 2) + i * (-1f), transform.position.y - (roomHeight / 2), -1), Quaternion.identity);
-                wallBlockPrefab.transform.parent = gameObject.transform;
+                //wallBlockPrefab.transform.parent = gameObject.transform;
             }
-            Debug.Log(transform.position.x - (roomWidth / 2));
+           // Debug.Log(transform.position.x - (roomWidth / 2));
         }
     }
 
     
-    public void FixPosition()
+    public void FixPosition(float additionalTime)
     {
+        timerForPositionFix += additionalTime;
+        Debug.Log(timerForPositionFix);
         startTimer = true;
-       
+        body = GetComponent<Rigidbody2D>();
+        if (body == null)
+        {
+            Debug.Log("ERROR");
+        }
+        //body.bodyType = RigidbodyType2D.Static;
+        //Debug.Log(gameObject.name + transform.position);
+        //float newXPosition;
+        //float newYPosition;
+        //newXPosition = Mathf.Round(transform.position.x);
+        //newYPosition = Mathf.Round(transform.position.y);
+        //transform.position = new Vector3(newXPosition, newYPosition, 0);
+        Debug.Log("IN ROOM");
         
     }
 }
