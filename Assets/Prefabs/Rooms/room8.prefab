@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4531282786916433697}
   - component: {fileID: -8339718164090748009}
   - component: {fileID: 2328454800418115141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,6 +149,19 @@ MonoBehaviour:
   circleCastRadius: 0
   wallBlockPrefab: {fileID: 5435562474259243081, guid: 268fba1b56155b6418e66ba13558d147,
     type: 3}
+  DifferentWallBlocks:
+  - {fileID: 5435562474259243081, guid: 268fba1b56155b6418e66ba13558d147, type: 3}
+  - {fileID: 5435562474259243081, guid: 268fba1b56155b6418e66ba13558d147, type: 3}
+  - {fileID: 5196385584543991081, guid: b4d5baa6755e47f4fb799b9b5037b1d0, type: 3}
+  - {fileID: 5690492263964748729, guid: 756173f6878dc0449bc8d3a84e1ffa16, type: 3}
+  - {fileID: 6770387060121825776, guid: eaf990d3a01330940b9d217bf9983fd4, type: 3}
+  - {fileID: 1030956674515076451, guid: 8b4af2e713387b14a915a262148479f0, type: 3}
+  - {fileID: 3756894981184893403, guid: 2b8ec5e16d34e314580a8127d42538f0, type: 3}
+  - {fileID: 5690492263964748729, guid: 756173f6878dc0449bc8d3a84e1ffa16, type: 3}
+  - {fileID: 5690492263964748729, guid: 756173f6878dc0449bc8d3a84e1ffa16, type: 3}
+  - {fileID: 3756894981184893403, guid: 2b8ec5e16d34e314580a8127d42538f0, type: 3}
+  - {fileID: 3756894981184893403, guid: 2b8ec5e16d34e314580a8127d42538f0, type: 3}
+  - {fileID: 5435562474259243081, guid: 268fba1b56155b6418e66ba13558d147, type: 3}
 --- !u!58 &2328454800418115141
 CircleCollider2D:
   m_ObjectHideFlags: 0

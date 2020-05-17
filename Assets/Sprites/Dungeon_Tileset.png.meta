@@ -1,67 +1,58 @@
 fileFormatVersion: 2
-guid: b23bd6474bcf7bb44908edc7221c730a
+guid: 3c65d48422d4dae4984ba42827266ce8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7198364919179847058
-    second: Arena Tileset_0
+      213: -3786115476455808955
+    second: Dungeon_Tileset_0
   - first:
-      213: -6078294682630917499
-    second: Arena Tileset_1
+      213: -3590207636862898149
+    second: Dungeon_Tileset_1
   - first:
-      213: -2306703612697210840
-    second: Arena Tileset_2
+      213: -6941422852762540485
+    second: Dungeon_Tileset_2
   - first:
-      213: 2008704327926763290
-    second: Arena Tileset_3
+      213: -6419999111262848172
+    second: Dungeon_Tileset_3
   - first:
-      213: 924059462203938558
-    second: Arena Tileset_4
+      213: 5094737752361063794
+    second: Dungeon_Tileset_4
   - first:
-      213: -5987414859847058958
-    second: Arena Tileset_5
+      213: 4023018930920339469
+    second: Dungeon_Tileset_5
   - first:
-      213: -3701350624854756606
-    second: Arena Tileset_6
+      213: -8120323925528636241
+    second: Dungeon_Tileset_6
   - first:
-      213: -2144794600211453306
-    second: Arena Tileset_7
+      213: 8938356945095094423
+    second: Dungeon_Tileset_7
   - first:
-      213: 389255296196572497
-    second: Arena Tileset_8
+      213: 2818063909598327431
+    second: Dungeon_Tileset_8
   - first:
-      213: 8349590425563979991
-    second: Arena Tileset_9
+      213: -778764822399169897
+    second: Dungeon_Tileset_9
   - first:
-      213: 4780791684158450616
-    second: Arena Tileset_10
+      213: -8474740879727053552
+    second: Dungeon_Tileset_10
   - first:
-      213: -8179318447753592475
-    second: Arena Tileset_11
+      213: 4521207776522067839
+    second: Dungeon_Tileset_11
   - first:
-      213: 5096920659082120349
-    second: Arena Tileset_12
+      213: 1558959487191823921
+    second: Dungeon_Tileset_12
   - first:
-      213: 3705796495848498532
-    second: Arena Tileset_13
+      213: 595508747133529673
+    second: Dungeon_Tileset_13
   - first:
-      213: -6429728022266865118
-    second: Arena Tileset_14
+      213: -1474506998622769691
+    second: Dungeon_Tileset_14
   - first:
-      213: -4755193609791689044
-    second: Arena Tileset_11
+      213: -3624728776038038798
+    second: Dungeon_Tileset_15
   - first:
-      213: 4674703064176061830
-    second: Arena Tileset_15
-  - first:
-      213: 9074009055217770201
-    second: Arena Tileset_16
-  - first:
-      213: 8730924887719686459
-    second: Arena Tileset_17
-  - first:
-      213: -2027130098355520163
-    second: Arena Tileset_18
+      213: -7606234629451901924
+    second: Dungeon_Tileset_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -195,390 +186,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arena Tileset_0
+      name: Dungeon_Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 416
+        width: 87
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5402e3ba804057bc0800000000000000
+      internalID: -3786115476455808955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 416
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1074ee0d250d2ec0800000000000000
+      internalID: -3590207636862898149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
-        width: 69
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 295295361cab5e360800000000000000
-      internalID: 7198364919179847058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_1
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 224
-        width: 61
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58273a9b03f85aba0800000000000000
-      internalID: -6078294682630917499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_2
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 276
-        width: 49
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82092132941fcffd0800000000000000
-      internalID: -2306703612697210840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_3
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 325
-        width: 60
-        height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1f4dd491f950eb10800000000000000
-      internalID: 2008704327926763290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_4
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 132
-        width: 29
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef6110c5f2be2dc00800000000000000
-      internalID: 924059462203938558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_5
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 131
-        width: 28
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f9bbeb58ed68eca0800000000000000
-      internalID: -5987414859847058958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_6
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 131
-        width: 29
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 203bc50a73922acc0800000000000000
-      internalID: -3701350624854756606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_7
-      rect:
-        serializedVersion: 2
-        x: 471
-        y: 350
-        width: 41
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68a683abca82c32e0800000000000000
-      internalID: -2144794600211453306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_8
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 484
-        width: 59
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1557cb821a9e66500800000000000000
-      internalID: 389255296196572497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_9
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 355
-        width: 24
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d06eb70144bfd370800000000000000
-      internalID: 8349590425563979991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_10
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 356
-        width: 24
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bbe76ff4b8c85240800000000000000
-      internalID: 4780791684158450616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_12
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 71
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9c80f4b556ebb640800000000000000
-      internalID: 5096920659082120349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_13
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 40
-        width: 17
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 465efe06742ad6330800000000000000
-      internalID: 3705796495848498532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_14
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 420
-        width: 74
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22a986e0e6405c6a0800000000000000
-      internalID: -6429728022266865118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_11
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 518
-        width: 76
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: caea8222b98220eb0800000000000000
-      internalID: -4755193609791689044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_15
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 420
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68de4a25ba1efd040800000000000000
-      internalID: 4674703064176061830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_16
-      rect:
-        serializedVersion: 2
-        x: 296
-        y: 438
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9dedee8d82b5ded70800000000000000
-      internalID: 9074009055217770201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_17
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 39
-        width: 31
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b31362d4de97a2970800000000000000
-      internalID: 8730924887719686459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arena Tileset_18
-      rect:
-        serializedVersion: 2
-        x: 364
-        y: 252
-        width: 72
+        y: 63
+        width: 32
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -587,8 +242,302 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5d340e6aef2ed3e0800000000000000
-      internalID: -2027130098355520163
+      spriteID: b366f4151bc1baf90800000000000000
+      internalID: -6941422852762540485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 64
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bbadaa2d497e6a0800000000000000
+      internalID: -6419999111262848172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275d0412ef424b640800000000000000
+      internalID: 5094737752361063794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 137
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08bd2e1762a4d730800000000000000
+      internalID: 4023018930920339469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 105
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa492cdb960de4f80800000000000000
+      internalID: -8120323925528636241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 416
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790f90cb84c6b0c70800000000000000
+      internalID: 8938356945095094423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 385
+        width: 46
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782f4fde136cb1720800000000000000
+      internalID: 2818063909598327431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 448
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ac35525854135f0800000000000000
+      internalID: -778764822399169897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 489
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015336c221ca36a80800000000000000
+      internalID: -8474740879727053552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 455
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fd453b48e8ebe30800000000000000
+      internalID: 4521207776522067839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 420
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1363b45d46982a510800000000000000
+      internalID: 1558959487191823921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 207
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e2885ec0ca34800800000000000000
+      internalID: 595508747133529673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 287
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed234072bf798be0800000000000000
+      internalID: -1474506998622769691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 350
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2cd11026062bdc0800000000000000
+      internalID: -3624728776038038798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 577
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c149e3177e9317690800000000000000
+      internalID: -7606234629451901924
       vertices: []
       indices: 
       edges: []

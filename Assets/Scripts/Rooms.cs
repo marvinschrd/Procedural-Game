@@ -28,6 +28,7 @@ public class Rooms : MonoBehaviour
 
 
     [SerializeField] GameObject wallBlockPrefab;
+    [SerializeField] GameObject[] DifferentWallBlocks;
     bool placeWall = true;
     
 
@@ -53,6 +54,7 @@ public class Rooms : MonoBehaviour
         GET_NEIGHBOURS,
         CHECK_COLLISIONS,
         DELETE_COMPONENTS,
+        BUILD_WALLS,
         OPEN_WALLS
     }
 
@@ -66,9 +68,9 @@ public class Rooms : MonoBehaviour
         {
             placeWall = false;
             Destroy(collider);
+            SpawnUpWall();
             SpawnLeftWall();
             SpawnRightWall();
-            SpawnUpWall();
             SpawnDownWall();
         }
 
@@ -213,8 +215,11 @@ public class Rooms : MonoBehaviour
 
             for (int i = 0; i < numberOfWallToSpawn * 1f + 1; i++)
             {
+
+                int index = Random.Range(0, DifferentWallBlocks.Length);
+
                 
-                Instantiate(wallBlockPrefab, new Vector3(transform.position.x + (roomWidth / 2) + i * (-1f), transform.position.y + (roomHeight / 2), -1), Quaternion.identity);
+                Instantiate(DifferentWallBlocks[index], new Vector3(transform.position.x + (roomWidth / 2) + i * (-1f), transform.position.y + (roomHeight / 2), -1), Quaternion.identity);
                 wallBlockPrefab.transform.parent = gameObject.transform;
             }
             Debug.Log(transform.position.x - (roomWidth / 2));
