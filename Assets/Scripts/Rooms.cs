@@ -32,6 +32,7 @@ public class Rooms : MonoBehaviour
     [SerializeField] GameObject wallBlockPrefab;
     [SerializeField] GameObject[] DifferentWallBlocks;
     bool placeWall = true;
+
     
 
     // Start is called before the first frame update
