@@ -57,6 +57,7 @@ public class CollisionTest : MonoBehaviour
             }
             getContacts = false;
             DrawCircles();
+            WallOpening();
         }
     }
 
@@ -108,6 +109,21 @@ public class CollisionTest : MonoBehaviour
             //Gizmos.DrawWireSphere(inBetweenPoints[i], 0.5f);
             //Gizmos.color = Color.black;
             Debug.Log("inbetween point" + inBetweenPoints[i]);
+        }
+    }
+
+    void WallOpening()
+    {
+        for(int i = 0; i <inBetweenPoints.Count; i++)
+        {
+            RaycastHit2D[] hits = Physics2D.CircleCastAll(inBetweenPoints[i],0.1f, Vector2.zero);
+            foreach (RaycastHit2D hit in hits)
+            {
+                if (hit.collider != gameObject.GetComponent<BoxCollider2D>())
+                {
+                    Destroy(hit.collider.transform.gameObject);
+                }
+            }
         }
     }
 

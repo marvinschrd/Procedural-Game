@@ -19,7 +19,7 @@ public class RoomSpawner : MonoBehaviour
 
     [SerializeField] float detectionRadius = 1;
 
-    [SerializeField] float waitingTime = 3;
+    [SerializeField] float waitingTime = 5f;
     float waitingTimer = 0;
     float timeToAdd = 0;
 
@@ -89,7 +89,7 @@ public class RoomSpawner : MonoBehaviour
                     Debug.Log("NOW BLOCKING");
                     Debug.Log(roomsSpawned[i].gameObject.name);
                     Rooms room = roomsSpawned[i].GetComponent<Rooms>();
-                  // room.FixPosition(timeToAdd);
+                    room.FixPosition(timeToAdd);
                     timeToAdd += 2f;
                     //Debug.Log(roomsSpawned[i].gameObject.name);
 

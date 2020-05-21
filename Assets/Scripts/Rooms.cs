@@ -33,7 +33,10 @@ public class Rooms : MonoBehaviour
     [SerializeField] GameObject[] DifferentWallBlocks;
     bool placeWall = true;
 
-    
+
+    List<ContactPoint2D> contacts;
+    List<Vector2> inBetweenPoints;
+    bool getContacts = true;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +49,9 @@ public class Rooms : MonoBehaviour
         //body = GetComponent<Rigidbody2D>();
        
         neighbours = new List<Transform>();
+
+        contacts = new List<ContactPoint2D>();
+        inBetweenPoints = new List<Vector2>();
         // aroundRoomsPosition = new List<Transform>();
 
         //colliderYSize = Random.Range(1f, maxColliderSize);
@@ -53,7 +59,7 @@ public class Rooms : MonoBehaviour
         //collider = GetComponent<BoxCollider2D>();
         //collider.size = new Vector2(colliderXSize, colliderYSize);
 
-        
+
     }
 
     enum Step
@@ -63,7 +69,8 @@ public class Rooms : MonoBehaviour
         CHECK_COLLISIONS,
         DELETE_COMPONENTS,
         BUILD_WALLS,
-        OPEN_WALLS
+        OPEN_WALLS,
+        END
     }
 
     Step step = Step.WAITING;
@@ -71,61 +78,117 @@ public class Rooms : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerForRooms -= Time.deltaTime;
-        if (placeWall && timerForRooms<=0)
-        {
-            placeWall = false;
-           
-            SpawnUpWall();
-            SpawnLeftWall();
-            SpawnRightWall();
-            SpawnDownWall();
-        }
-        if (startTimer)
-        {
-                Debug.Log("FIXED_POSITION");
-            timerForPositionFix -= Time.deltaTime;
-            if (timerForPositionFix<=0&&!stopped)
-            {
-                //stopped = true;
-                float newXPosition;
-                float newYPosition;
-                newXPosition = Mathf.Round(transform.position.x);
-                newYPosition = Mathf.Round(transform.position.y);
-                transform.position = new Vector3(newXPosition, newYPosition, 0);
-                Destroy(body);
-                stopped = true;
-                startTimer = false;
-            }
-        }
-
-        //switch(step)
+        //timerForRooms -= Time.deltaTime;
+        //if (placeWall && timerForRooms<=0)
         //{
-        //    case Step.WAITING:
-        //        if(canStart)
-        //        {
-        //            step = Step.GET_NEIGHBOURS;
-        //        }
-        //        break;
-        //    case Step.GET_NEIGHBOURS:
-        //        Vector2 colliderSize = new Vector2(collider.size.x, collider.size.y);
-        //        circleCastRadius = colliderSize.magnitude;
-        //        RaycastHit2D[] hits = Physics2D.CircleCastAll(gameObject.transform.position, circleCastRadius, Vector2.zero);
-        //        foreach (RaycastHit2D hit in hits)
-        //        {
-        //            if (hit.collider != gameObject.GetComponent<BoxCollider2D>())
-        //            {
-        //                neighbours.Add(hit.transform);
-        //            }
-        //        }
-        //        step = Step.CHECK_COLLISIONS;
-        //        break;
-        //    case Step.CHECK_COLLISIONS:
-        //        // mettre en place la detection des points de collisions pour calculer le point ou ouvrir l'accès
-        //        break;
+        //    placeWall = false;
+           
+        //    SpawnUpWall();
+        //    SpawnLeftWall();
+        //    SpawnRightWall();
+        //    SpawnDownWall();
+        //}
+        //if (startTimer)
+        //{
+        //        Debug.Log("FIXED_POSITION");
+        //    timerForPositionFix -= Time.deltaTime;
+        //    if (timerForPositionFix<=0&&!stopped)
+        //    {
+        //        //stopped = true;
+        //        float newXPosition;
+        //        float newYPosition;
+        //        newXPosition = Mathf.Round(transform.position.x);
+        //        newYPosition = Mathf.Round(transform.position.y);
+        //        transform.position = new Vector3(newXPosition, newYPosition, 0);
+        //        Destroy(body);
+        //        stopped = true;
+        //        startTimer = false;
+        //    }
         //}
 
-        
+        switch (step)
+        {
+            case Step.WAITING:
+                if (canStart)
+                {
+                    step = Step.GET_NEIGHBOURS;
+                }
+                break;
+            case Step.GET_NEIGHBOURS:
+                Vector2 colliderSize = new Vector2(collider.size.x, collider.size.y);
+                circleCastRadius = colliderSize.magnitude;
+                RaycastHit2D[] hits = Physics2D.CircleCastAll(gameObject.transform.position, circleCastRadius, Vector2.zero);
+                foreach (RaycastHit2D hit in hits)
+                {
+                    if (hit.collider != gameObject.GetComponent<BoxCollider2D>())
+                    {
+                        neighbours.Add(hit.transform);
+                    }
+                }
+                step = Step.CHECK_COLLISIONS;
+                break;
+            case Step.CHECK_COLLISIONS:
+                
+                // mettre en place la detection des points de collisions pour calculer le point ou ouvrir l'accès
+                if (getContacts)
+                {
+                    collider.GetContacts(contacts);
+                    //Vector2 test = (new Vector2(-1.45f, 0.7f) + new Vector2(-1.7f, 0.7f)) / 2;
+                    //Vector2 test2 = (new Vector2(-0.9f, 0.7f).normalized + new Vector2(-0.7f, 0.7f).normalized).normalized;
+                    //Debug.Log("TEST =" + test);
+                    //Debug.Log("TEST2 =" + test2);
+                    //Debug.Log(contacts.Count);
+                    //Debug.Log(contacts[0].collider.transform.name);
+                    //Debug.Log(contacts[1].collider.transform.name);
+                  //  Debug.Log(contacts[2].collider.transform.name + "x =" + contacts[2].point.x + "y=" + contacts[2].point.y);
+                    //Debug.Log(contacts[3].collider.transform.name + "x =" + contacts[3].point.x + "y=" + contacts[3].point.y);
+                    //Debug.Log(contacts[3].collider.transform.name);
+
+                    while (contacts.Count > 0)
+                    {
+                       // Debug.Log(contacts[0].collider.transform.name);
+                        Vector2 firstPointPosition = new Vector2(contacts[0].point.x, contacts[0].point.y);
+                       // Debug.Log("first point position = " + firstPointPosition);
+                        //Debug.Log(contacts[1].point.x + contacts[1].point.y);
+                        Vector2 secondPointPosition = new Vector2(contacts[1].point.x, contacts[1].point.y);
+                       // Debug.Log("second point position =" + secondPointPosition);
+                        // Vector2 inBetweenPointPosition = (firstPointPosition.normalized+ secondPointPosition.normalized).normalized;
+                        Vector2 inBetweenPointPosition = (firstPointPosition + secondPointPosition) / 2;
+                        inBetweenPoints.Add(inBetweenPointPosition);
+                        contacts.RemoveAt(0);
+                        contacts.RemoveAt(0);
+                        //Debug.Log("POINT 0" +contacts[0].point.x + contacts[0].point.y);
+                        //Debug.Log("POINT 1"+contacts[1].point.x + contacts[1].point.y);
+                        //Debug.Log("inbetween point =" +inBetweenPoints[0]);
+                        //maintenant, utiliser la liste de points entre deux pour dessiner des gizmos;
+                    }
+                    getContacts = false;
+                    DrawCircles();
+                    //WallOpening();
+                }
+                break;
+            case Step.BUILD_WALLS:
+                timerForRooms -= Time.deltaTime;
+                if (placeWall && timerForRooms <= 0)
+                {
+                    placeWall = false;
+                    Destroy(body);
+                    SpawnUpWall();
+                    SpawnLeftWall();
+                    SpawnRightWall();
+                    SpawnDownWall();
+                }
+                step = Step.END;
+                break;
+            case Step.OPEN_WALLS:
+                Destroy(collider);
+                WallOpening();
+                break;
+            case Step.END:
+                break;
+        }
+
+
         //FixPosition();
         //float newXPosition;
         //float newYPosition;
@@ -135,7 +198,7 @@ public class Rooms : MonoBehaviour
 
         //if (stopped)
         //{
-            
+
         //}
     }
 
@@ -263,7 +326,7 @@ public class Rooms : MonoBehaviour
     
     public void FixPosition(float additionalTime)
     {
-        timerForPositionFix += additionalTime;
+       // timerForPositionFix += additionalTime;
         Debug.Log(timerForPositionFix);
         startTimer = true;
         body = GetComponent<Rigidbody2D>();
@@ -271,6 +334,7 @@ public class Rooms : MonoBehaviour
         {
             Debug.Log("ERROR");
         }
+        canStart = true;
         //body.bodyType = RigidbodyType2D.Static;
         //Debug.Log(gameObject.name + transform.position);
         //float newXPosition;
@@ -280,5 +344,43 @@ public class Rooms : MonoBehaviour
         //transform.position = new Vector3(newXPosition, newYPosition, 0);
         Debug.Log("IN ROOM");
         
+    }
+
+    void DrawCircles()
+    {
+
+        for (int i = 0; i < inBetweenPoints.Count; i++)
+        {
+            //Gizmos.DrawWireSphere(inBetweenPoints[i], 0.5f);
+            //Gizmos.color = Color.black;
+            Debug.Log("inbetween point" + inBetweenPoints[i]);
+        }
+    }
+
+    void WallOpening()
+    {
+        for (int i = 0; i < inBetweenPoints.Count; i++)
+        {
+            RaycastHit2D[] hits = Physics2D.CircleCastAll(inBetweenPoints[i], 0.1f, Vector2.zero);
+            foreach (RaycastHit2D hit in hits)
+            {
+                if (hit.collider != gameObject.GetComponent<BoxCollider2D>())
+                {
+                    Destroy(hit.collider.transform.gameObject);
+                }
+            }
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (inBetweenPoints != null)
+        {
+            for (int i = 0; i < inBetweenPoints.Count; i++)
+            {
+                Gizmos.DrawWireSphere(inBetweenPoints[i], 0.5f);
+                Gizmos.color = Color.black;
+            }
+        }
     }
 }
