@@ -168,14 +168,14 @@ public class RoomSpawner : MonoBehaviour
 
     void RandomlyChosePrefab()
     {
-        roomIndex = Random.Range(0, totalNumberOfRoomsPrefabs);
+        roomIndex = Random.Range(0, roomsPrefabs.Count);
         //Debug.Log(roomIndex);
         //Debug.Log(roomsPrefabs[roomIndex].name);
     }
 
     void SpawnRooms()
     {
-        while(roomsToSpawn.Count>2)
+        while(roomsToSpawn.Count>10)
         {
            roomsSpawned.Add( Instantiate(roomsToSpawn[0], spawnPosition, Quaternion.identity));
             //roomsSpawned.Add(roomsToSpawn[0]);
@@ -183,7 +183,7 @@ public class RoomSpawner : MonoBehaviour
         }
         while (roomsToSpawn.Count > 0)
         {
-            roomsSpawned.Add(Instantiate(roomsToSpawn[0], spawnPosition, Quaternion.identity));
+            roomsSpawned.Add(Instantiate(roomsToSpawn[0],secondSpawnPosition, Quaternion.identity));
            // roomsSpawned.Add(roomsToSpawn[0]);
             roomsToSpawn.RemoveAt(0);
         }

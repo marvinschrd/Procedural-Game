@@ -245,7 +245,12 @@ MonoBehaviour:
   - {fileID: 1726803794347007693, guid: 2baebf73d0cdfd343a4fab525e07f8a3, type: 3}
   - {fileID: 278122549640513745, guid: 5801dd15f8b26cb409b272aa0f6cdfe2, type: 3}
   - {fileID: 5912783761575997598, guid: f633daa8233585d4e9eb445f48527033, type: 3}
+  - {fileID: 1960517610123033228, guid: 4044a39b879b9894d882331ee49ddddf, type: 3}
   - {fileID: 1420064111699387998, guid: 19c461f85f8725c44afe858bdd4eb49e, type: 3}
+  - {fileID: 2287335585840174372, guid: 44456d7a0e1e78e46a8b07b7b9df39d8, type: 3}
+  - {fileID: 289743232510360385, guid: a875ca52b44048345ab14575feedad23, type: 3}
+  - {fileID: 8087639670514015815, guid: 0cb35a9dcb53e984da7c140141f18bfb, type: 3}
+  - {fileID: 6768830684128363373, guid: ae2cec620bc15024a8fac3da962c5d89, type: 3}
   detectionRadius: 1
   waitingTime: 3
 --- !u!4 &684023009

@@ -109,6 +109,7 @@ public class Rooms : MonoBehaviour
         switch (step)
         {
             case Step.WAITING:
+               
                 if (canStart)
                 {
                     step = Step.GET_NEIGHBOURS;
@@ -165,11 +166,13 @@ public class Rooms : MonoBehaviour
                     getContacts = false;
                     DrawCircles();
                     //WallOpening();
+                    Destroy(body);
                 }
+                step = Step.BUILD_WALLS;
                 break;
             case Step.BUILD_WALLS:
-                timerForRooms -= Time.deltaTime;
-                if (placeWall && timerForRooms <= 0)
+               
+                if (placeWall)
                 {
                     placeWall = false;
                     Destroy(body);
@@ -178,11 +181,12 @@ public class Rooms : MonoBehaviour
                     SpawnRightWall();
                     SpawnDownWall();
                 }
-                step = Step.END;
+                step = Step.OPEN_WALLS;
                 break;
             case Step.OPEN_WALLS:
                 Destroy(collider);
                 WallOpening();
+                step = Step.END;
                 break;
             case Step.END:
                 break;
@@ -361,10 +365,15 @@ public class Rooms : MonoBehaviour
     {
         for (int i = 0; i < inBetweenPoints.Count; i++)
         {
-            RaycastHit2D[] hits = Physics2D.CircleCastAll(inBetweenPoints[i], 0.1f, Vector2.zero);
+            RaycastHit2D[] hits = Physics2D.CircleCastAll(inBetweenPoints[i], 0.2f, Vector2.zero);
             foreach (RaycastHit2D hit in hits)
             {
-                if (hit.collider != gameObject.GetComponent<BoxCollider2D>())
+                Debug.Log("NAME IS = " +hit.collider.gameObject.name);
+                //if (hit.collider != gameObject.GetComponent<BoxCollider2D>())
+                //{
+                //    Destroy(hit.collider.transform.gameObject);
+                //}
+                if (hit.collider.gameObject.CompareTag("Walls"))
                 {
                     Destroy(hit.collider.transform.gameObject);
                 }
