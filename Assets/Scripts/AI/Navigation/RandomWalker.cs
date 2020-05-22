@@ -9,7 +9,7 @@ public class RandomWalker : MonoBehaviour {
 
     List<Vector3> path_;
 
-    [SerializeField] float speed_;
+    //[SerializeField] float speed_;
     [SerializeField] float stoppingDistance_;
     Rigidbody body_;
     UnitMovement unitMovement_;
@@ -24,7 +24,7 @@ public class RandomWalker : MonoBehaviour {
     void Update()
     {
         if (path_ == null || path_.Count == 0) {
-            path_ = PathFinder.Instance.GetPath(transform.position, new Vector3(Random.Range(-20, 20), 0, Random.Range(-10, -30)));
+            path_ = PathFinder.Instance.GetPath(transform.position, new Vector3(Random.Range(-2, 2), Random.Range(2, -2), 0));
             
             unitMovement_.SetTargetPosition(path_[0]);
         } else {
