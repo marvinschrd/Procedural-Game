@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3094531143959251946}
   - component: {fileID: 4096733360984727594}
   - component: {fileID: -17063706916552706}
+  - component: {fileID: 2839744904434472704}
   m_Layer: 8
   m_Name: room9
   m_TagString: Untagged
@@ -178,3 +179,36 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!60 &2839744904434472704
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5912783761575997598}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.17558543, y: -0.5}
+      - {x: -0.16498217, y: -0.5}
+      - {x: -0.5, y: -0.19544229}
+      - {x: -0.5, y: 0.26820803}
+      - {x: -0.21872234, y: 0.5}
+      - {x: 0.16246669, y: 0.5}
+      - {x: 0.5, y: 0.25504082}
+      - {x: 0.5, y: -0.20622039}

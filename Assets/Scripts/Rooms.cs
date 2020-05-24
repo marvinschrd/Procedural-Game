@@ -5,6 +5,7 @@ using UnityEngine;
 public class Rooms : MonoBehaviour
 {
     BoxCollider2D collider;
+    PolygonCollider2D polyCollider;
     Rigidbody2D body;
     float colliderYSize = 1f;
     float colliderXSize = 1f;
@@ -46,8 +47,9 @@ public class Rooms : MonoBehaviour
 
         RoomSpawner = FindObjectOfType<RoomSpawner>();
         collider = GetComponent<BoxCollider2D>();
+        polyCollider = GetComponent<PolygonCollider2D>();
         //body = GetComponent<Rigidbody2D>();
-       
+        //polyCollider.enabled = false;
         neighbours = new List<Transform>();
 
         contacts = new List<ContactPoint2D>();
@@ -116,6 +118,7 @@ public class Rooms : MonoBehaviour
                 }
                 break;
             case Step.GET_NEIGHBOURS:
+                collider.enabled = false;
                 Vector2 colliderSize = new Vector2(collider.size.x, collider.size.y);
                 circleCastRadius = colliderSize.magnitude;
                 RaycastHit2D[] hits = Physics2D.CircleCastAll(gameObject.transform.position, circleCastRadius, Vector2.zero);
@@ -133,7 +136,8 @@ public class Rooms : MonoBehaviour
                 // mettre en place la detection des points de collisions pour calculer le point ou ouvrir l'accès
                 if (getContacts)
                 {
-                    collider.GetContacts(contacts);
+                    
+                   polyCollider.GetContacts(contacts);
                     //Vector2 test = (new Vector2(-1.45f, 0.7f) + new Vector2(-1.7f, 0.7f)) / 2;
                     //Vector2 test2 = (new Vector2(-0.9f, 0.7f).normalized + new Vector2(-0.7f, 0.7f).normalized).normalized;
                     //Debug.Log("TEST =" + test);
@@ -172,6 +176,7 @@ public class Rooms : MonoBehaviour
                 break;
             case Step.BUILD_WALLS:
                
+                    DestroyRoomsWithNoConnections();
                 if (placeWall)
                 {
                     placeWall = false;
@@ -184,6 +189,7 @@ public class Rooms : MonoBehaviour
                 step = Step.OPEN_WALLS;
                 break;
             case Step.OPEN_WALLS:
+                Destroy(polyCollider);
                 Destroy(collider);
                 WallOpening();
                 step = Step.END;
@@ -378,6 +384,16 @@ public class Rooms : MonoBehaviour
                     Destroy(hit.collider.transform.gameObject);
                 }
             }
+        }
+    }
+
+    void DestroyRoomsWithNoConnections()
+    {
+        if(inBetweenPoints.Count <=0)
+        {
+            placeWall = false;
+            Debug.Log("NO CONNECTIONS");
+            Destroy(gameObject);
         }
     }
 
