@@ -371,7 +371,7 @@ public class Rooms : MonoBehaviour
     {
         for (int i = 0; i < inBetweenPoints.Count; i++)
         {
-            RaycastHit2D[] hits = Physics2D.CircleCastAll(inBetweenPoints[i], 0.5f, Vector2.zero);
+            RaycastHit2D[] hits = Physics2D.CircleCastAll(inBetweenPoints[i], 0.4f, Vector2.zero);
             foreach (RaycastHit2D hit in hits)
             {
                 Debug.Log("NAME IS = " +hit.collider.gameObject.name);
@@ -403,7 +403,7 @@ public class Rooms : MonoBehaviour
         {
             for (int i = 0; i < inBetweenPoints.Count; i++)
             {
-                Gizmos.DrawWireSphere(inBetweenPoints[i], 0.5f);
+                Gizmos.DrawWireSphere(inBetweenPoints[i], 0.4f);
                 Gizmos.color = Color.black;
             }
         }
