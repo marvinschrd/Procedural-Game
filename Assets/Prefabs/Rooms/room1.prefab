@@ -833,8 +833,8 @@ GameObject:
   - component: {fileID: 5880470851754827066}
   - component: {fileID: -1333681814767595929}
   - component: {fileID: 3784755039274475535}
-  - component: {fileID: 7802952893825575442}
   - component: {fileID: 1543453617866213431}
+  - component: {fileID: 6076348362280857651}
   m_Layer: 8
   m_Name: room1
   m_TagString: Untagged
@@ -999,22 +999,6 @@ MonoBehaviour:
   - {fileID: 3756894981184893403, guid: 2b8ec5e16d34e314580a8127d42538f0, type: 3}
   - {fileID: 3756894981184893403, guid: 2b8ec5e16d34e314580a8127d42538f0, type: 3}
   - {fileID: 5435562474259243081, guid: 268fba1b56155b6418e66ba13558d147, type: 3}
---- !u!58 &7802952893825575442
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5815343432494873126}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.02164449, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.80611503
 --- !u!60 &1543453617866213431
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1048,6 +1032,21 @@ PolygonCollider2D:
       - {x: 0.5, y: 0.33399105}
       - {x: 0.5, y: -0.3349999}
       - {x: 0.4164176, y: -0.5}
+--- !u!114 &6076348362280857651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5815343432494873126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8964d85d992cc4a8111c3b3b695cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterPortal: {fileID: 7820543031727259864, guid: 0f503fb5741031b42ba7d5a0abad2336,
+    type: 3}
+  roomMonsterCapacity: 2
 --- !u!1 &7132070199040682811
 GameObject:
   m_ObjectHideFlags: 0

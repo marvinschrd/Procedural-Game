@@ -43,7 +43,7 @@ public class Rooms : MonoBehaviour
     void Start()
     {
        // Debug.Break();
-        Debug.Log("PREFAB CREE");
+
 
         RoomSpawner = FindObjectOfType<RoomSpawner>();
         collider = GetComponent<BoxCollider2D>();
@@ -192,9 +192,12 @@ public class Rooms : MonoBehaviour
                 Destroy(polyCollider);
                 Destroy(collider);
                 WallOpening();
+                EnnemiesSpawner ennemies = GetComponent<EnnemiesSpawner>();
+                ennemies.ActivateSpawn();
                 step = Step.END;
                 break;
             case Step.END:
+
                 break;
         }
 
@@ -352,7 +355,7 @@ public class Rooms : MonoBehaviour
         //newXPosition = Mathf.Round(transform.position.x);
         //newYPosition = Mathf.Round(transform.position.y);
         //transform.position = new Vector3(newXPosition, newYPosition, 0);
-        Debug.Log("IN ROOM");
+        //Debug.Log("IN ROOM");
         
     }
 
@@ -374,7 +377,7 @@ public class Rooms : MonoBehaviour
             RaycastHit2D[] hits = Physics2D.CircleCastAll(inBetweenPoints[i], 0.4f, Vector2.zero);
             foreach (RaycastHit2D hit in hits)
             {
-                Debug.Log("NAME IS = " +hit.collider.gameObject.name);
+                //Debug.Log("NAME IS = " +hit.collider.gameObject.name);
                 //if (hit.collider != gameObject.GetComponent<BoxCollider2D>())
                 //{
                 //    Destroy(hit.collider.transform.gameObject);

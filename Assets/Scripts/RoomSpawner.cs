@@ -87,7 +87,7 @@ public class RoomSpawner : MonoBehaviour
                 {
                     
                     Debug.Log("NOW BLOCKING");
-                    Debug.Log(roomsSpawned[i].gameObject.name);
+                    //Debug.Log(roomsSpawned[i].gameObject.name);
                     Rooms room = roomsSpawned[i].GetComponent<Rooms>();
                     room.FixPosition(timeToAdd);
                     timeToAdd += 2f;
