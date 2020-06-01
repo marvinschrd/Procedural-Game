@@ -500,6 +500,8 @@ MonoBehaviour:
   - {fileID: 3756894981184893403, guid: 2b8ec5e16d34e314580a8127d42538f0, type: 3}
   - {fileID: 3756894981184893403, guid: 2b8ec5e16d34e314580a8127d42538f0, type: 3}
   - {fileID: 5435562474259243081, guid: 268fba1b56155b6418e66ba13558d147, type: 3}
+  playerPortal: {fileID: 7820543031727259864, guid: 0f503fb5741031b42ba7d5a0abad2336,
+    type: 3}
 --- !u!60 &2839744904434472704
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -545,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d8964d85d992cc4a8111c3b3b695cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPortal: {fileID: 7820543031727259864, guid: 0f503fb5741031b42ba7d5a0abad2336,
+  monsterPortal: {fileID: 737122100649376754, guid: 774bf731e0d125140b34dcfb0a536398,
     type: 3}
   roomMonsterCapacity: 1
 --- !u!1 &6393210616602222043

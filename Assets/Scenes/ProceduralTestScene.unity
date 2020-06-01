@@ -302,6 +302,7 @@ MonoBehaviour:
   - {fileID: 6768830684128363373, guid: ae2cec620bc15024a8fac3da962c5d89, type: 3}
   detectionRadius: 1
   waitingTime: 3
+  playerPortal: {fileID: 0}
 --- !u!4 &684023009
 Transform:
   m_ObjectHideFlags: 0

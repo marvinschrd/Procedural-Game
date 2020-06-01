@@ -23,7 +23,9 @@ public class RoomSpawner : MonoBehaviour
     float waitingTimer = 0;
     float timeToAdd = 0;
 
-  struct Node
+  
+
+    struct Node
     {
         public Transform pos;
         public List<Node> neighbourRooms;
@@ -54,6 +56,7 @@ public class RoomSpawner : MonoBehaviour
         SPAWNS_ROOMS,
         ORDER_ROOMS_BY_DYSTANCE_FROM_CENTER,
         LOCK_ROOMS_POSITON_BY_ORDER,
+        SPAWN_PLAYER,
         STOP
     }
 
@@ -96,10 +99,15 @@ public class RoomSpawner : MonoBehaviour
                     //Debug.Log(roomsSpawned[i].transform.position);
                    
                 }
-                    step = Step.STOP;
+                    step = Step.SPAWN_PLAYER;
                     //float xPosition = Mathf.Round(roomsSpawned[i].transform.position.x);
                     //float yPosition = Mathf.Round(roomsSpawned[i].transform.position.y);
                     //roomsSpawned[i].transform.position = new Vector3(xPosition, yPosition, 0);
+                break;
+            case Step.SPAWN_PLAYER:
+                Rooms roomForPlayer = roomsSpawned[roomsSpawned.Count-1].GetComponent<Rooms>();
+                roomForPlayer.SpawnPlayer();
+                step = Step.STOP;
                 break;
             case Step.STOP:
                 Debug.Log("STOP");

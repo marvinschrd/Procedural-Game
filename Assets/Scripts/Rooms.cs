@@ -39,6 +39,8 @@ public class Rooms : MonoBehaviour
     List<Vector2> inBetweenPoints;
     bool getContacts = true;
 
+    [SerializeField] GameObject playerPortal;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -398,6 +400,21 @@ public class Rooms : MonoBehaviour
             Debug.Log("NO CONNECTIONS");
             Destroy(gameObject);
         }
+    }
+
+    public void SpawnPlayer()
+    {
+       Vector3 spawnPosition = new Vector3(Random.Range(transform.position.x - (transform.localScale.x / 2), transform.position.x + (transform.localScale.x / 2)), Random.Range(transform.position.y - (transform.localScale.y / 2), transform.position.y + (transform.localScale.y / 2)), 0f);
+       RaycastHit2D[] hit = Physics2D.CircleCastAll(spawnPosition, 0.1f, Vector2.zero);
+        int maxLoop = 0;
+        while (hit.Length > 0&&maxLoop<100)
+        {
+             spawnPosition = new Vector3(Random.Range(transform.position.x - (transform.localScale.x / 2), transform.position.x + (transform.localScale.x / 2)), Random.Range(transform.position.y - (transform.localScale.y / 2), transform.position.y + (transform.localScale.y / 2)), 0f);
+             hit = Physics2D.CircleCastAll(spawnPosition, 0.1f, Vector2.zero);
+            maxLoop++;
+        }
+        Instantiate(playerPortal, spawnPosition, Quaternion.identity);
+
     }
 
     private void OnDrawGizmos()

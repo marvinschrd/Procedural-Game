@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speed;
     //[SerializeField] PlayerAttack playerAttack;
     [SerializeField] Collider2D attackCollider;
+    CameraScript camera;
 
     //provisoir
     //[SerializeField] private Transform[] spawn;
@@ -28,10 +29,13 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        body = GetComponent<Rigidbody2D>();
+       body = GetComponent<Rigidbody2D>();
        // attackCollider.enabled = false;
-        //cooldownTrap = FindObjectOfType<CooldownTrap>();
-        anim = GetComponent<Animator>();
+       //cooldownTrap = FindObjectOfType<CooldownTrap>();
+       anim = GetComponent<Animator>();
+       camera = FindObjectOfType<CameraScript>();
+        Debug.Log(camera.name);
+      
     }
 
     private void FixedUpdate()
@@ -42,6 +46,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (camera != null)
+        {
+            camera.FindPlayer(transform);
+        }
         direction = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
         //if (Input.GetKeyDown("q"))
         //{
