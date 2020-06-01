@@ -175,12 +175,12 @@ public class RoomSpawner : MonoBehaviour
 
     void SpawnRooms()
     {
-        while(roomsToSpawn.Count>10)
-        {
-           roomsSpawned.Add( Instantiate(roomsToSpawn[0], spawnPosition, Quaternion.identity));
-            //roomsSpawned.Add(roomsToSpawn[0]);
-            roomsToSpawn.RemoveAt(0);
-        }
+        //while(roomsToSpawn.Count>10)
+        //{
+        //   roomsSpawned.Add( Instantiate(roomsToSpawn[0], spawnPosition, Quaternion.identity));
+        //    //roomsSpawned.Add(roomsToSpawn[0]);
+        //    roomsToSpawn.RemoveAt(0);
+        //}
         while (roomsToSpawn.Count > 0)
         {
             roomsSpawned.Add(Instantiate(roomsToSpawn[0],secondSpawnPosition, Quaternion.identity));

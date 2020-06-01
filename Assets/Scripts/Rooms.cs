@@ -251,10 +251,10 @@ public class Rooms : MonoBehaviour
 
            // Debug.Log("room position" + transform.position.x);
 
-            for (int i = 0; i < numberOfWallToSpawn*2+1; i++)
+            for (int i = 0; i < numberOfWallToSpawn*2; i++)
             {
                
-                Instantiate(wallBlockPrefab, new Vector3(transform.position.x - (roomWidth/2), transform.position.y+(roomHeight/2) + i * (-0.5f), -1), Quaternion.identity);
+                Instantiate(wallBlockPrefab, new Vector3(transform.position.x - (roomWidth/2 - 0.475f), transform.position.y+(roomHeight/2) + i * (-0.5f), -1), Quaternion.identity);
                // wallBlockPrefab.transform.parent = gameObject.transform;
             }
                // Debug.Log(transform.position.x - (roomWidth / 2));
@@ -276,10 +276,10 @@ public class Rooms : MonoBehaviour
 
            // Debug.Log("room position" + transform.position.x);
 
-            for (int i = 0; i < numberOfWallToSpawn *2+1 ; i++)
+            for (int i = 0; i < numberOfWallToSpawn *2 ; i++)
             {
                 
-               Instantiate(wallBlockPrefab, new Vector3(transform.position.x + (roomWidth / 2), transform.position.y + (roomHeight / 2) + i * (-0.5f), -1), Quaternion.identity);
+               Instantiate(wallBlockPrefab, new Vector3(transform.position.x + (roomWidth / 2-0.475f), transform.position.y + (roomHeight / 2) + i * (-0.5f), -1), Quaternion.identity);
                // wallBlockPrefab.transform.parent = gameObject.transform;
             }
             //Debug.Log(transform.position.x - (roomWidth / 2));
@@ -298,13 +298,13 @@ public class Rooms : MonoBehaviour
 
             //Debug.Log("room position" + transform.position.x);
 
-            for (int i = 0; i < numberOfWallToSpawn * 1f + 1; i++)
+            for (int i = 0; i < numberOfWallToSpawn -2 ; i++)
             {
 
                 int index = Random.Range(0, DifferentWallBlocks.Length);
 
                 
-                Instantiate(DifferentWallBlocks[index], new Vector3(transform.position.x + (roomWidth / 2) + i * (-1f), transform.position.y + (roomHeight / 2), -1), Quaternion.identity);
+                Instantiate(DifferentWallBlocks[index], new Vector3(transform.position.x + (roomWidth / 2-1.5f) + i * (-1f), transform.position.y + (roomHeight / 2), -1), Quaternion.identity);
                // wallBlockPrefab.transform.parent = gameObject.transform;
             }
            // Debug.Log(transform.position.x - (roomWidth / 2));
@@ -323,10 +323,10 @@ public class Rooms : MonoBehaviour
 
             //Debug.Log("room position" + transform.position.x);
 
-            for (int i = 0; i < numberOfWallToSpawn * 1 + 1; i++)
+            for (int i = 0; i < numberOfWallToSpawn -2 ; i++)
             {
                 
-               Instantiate(wallBlockPrefab, new Vector3(transform.position.x + (roomWidth / 2) + i * (-1f), transform.position.y - (roomHeight / 2), -1), Quaternion.identity);
+               Instantiate(wallBlockPrefab, new Vector3(transform.position.x + (roomWidth / 2-1.5f) + i * (-1f), transform.position.y - (roomHeight / 2)+0.475f, -1), Quaternion.identity);
                 //wallBlockPrefab.transform.parent = gameObject.transform;
             }
            // Debug.Log(transform.position.x - (roomWidth / 2));
@@ -371,7 +371,7 @@ public class Rooms : MonoBehaviour
     {
         for (int i = 0; i < inBetweenPoints.Count; i++)
         {
-            RaycastHit2D[] hits = Physics2D.CircleCastAll(inBetweenPoints[i], 0.2f, Vector2.zero);
+            RaycastHit2D[] hits = Physics2D.CircleCastAll(inBetweenPoints[i], 0.5f, Vector2.zero);
             foreach (RaycastHit2D hit in hits)
             {
                 Debug.Log("NAME IS = " +hit.collider.gameObject.name);

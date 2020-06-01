@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: eeceb18fbf3440840a04ac8130f09f0e
+guid: a30596864b0db754aaca7f1c232d17cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8632807521500629345
-    second: Shadows_0
+      213: -3647368606938570174
+    second: Forest Tileset_0
   - first:
-      213: 814388298513811021
-    second: Shadows_1
+      213: -6870542529362793275
+    second: Forest Tileset_1
   - first:
-      213: -7032082532594847741
-    second: Shadows_2
+      213: 1255584786854578133
+    second: Forest Tileset_2
   - first:
-      213: -7139420109098843469
-    second: Shadows_3
+      213: -631273287477559015
+    second: Forest Tileset_3
+  - first:
+      213: 2714843214671482105
+    second: Forest Tileset_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -147,13 +150,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shadows_0
+      name: Forest Tileset_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 1
-        width: 64
-        height: 36
+        x: 127
+        y: 195
+        width: 65
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +164,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9672aa3c4b123880800000000000000
-      internalID: -8632807521500629345
+      spriteID: 242e38a9391f16dc0800000000000000
+      internalID: -3647368606938570174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shadows_1
+      name: Forest Tileset_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
+        x: 580
+        y: 416
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cced13a8fde6a0a0800000000000000
+      internalID: -6870542529362793275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 418
         width: 29
-        height: 37
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d46862ab7d94d4b00800000000000000
-      internalID: 814388298513811021
+      spriteID: 5d70ad516bbbc6110800000000000000
+      internalID: 1255584786854578133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shadows_2
+      name: Forest Tileset_3
       rect:
         serializedVersion: 2
-        x: 66
-        y: 7
-        width: 24
-        height: 29
+        x: 581
+        y: 387
+        width: 22
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3007475b136096e90800000000000000
-      internalID: -7032082532594847741
+      spriteID: 91105b72a444d37f0800000000000000
+      internalID: -631273287477559015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shadows_3
+      name: Forest Tileset_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 2
-        width: 29
-        height: 35
+        x: 609
+        y: 387
+        width: 30
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b202eeac3fabec90800000000000000
-      internalID: -7139420109098843469
+      spriteID: 9fc8f57158f0da520800000000000000
+      internalID: 2714843214671482105
       vertices: []
       indices: 
       edges: []

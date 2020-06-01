@@ -62,6 +62,12 @@ TextureImporter:
   - first:
       213: -2027130098355520163
     second: Arena Tileset_18
+  - first:
+      213: 5941219698942477242
+    second: Arena Tileset_19
+  - first:
+      213: 6637851432121209221
+    second: Arena Tileset_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -589,6 +595,48 @@ TextureImporter:
       bones: []
       spriteID: d5d340e6aef2ed3e0800000000000000
       internalID: -2027130098355520163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arena Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 101
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3050896d3737250800000000000000
+      internalID: 5941219698942477242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arena Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 102
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581176b65b26e1c50800000000000000
+      internalID: 6637851432121209221
       vertices: []
       indices: 
       edges: []
