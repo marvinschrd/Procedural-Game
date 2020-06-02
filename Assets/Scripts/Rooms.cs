@@ -26,7 +26,7 @@ public class Rooms : MonoBehaviour
     RoomSpawner RoomSpawner;
     bool canStart = false;
 
-    List<Transform> neighbours;
+    List<EnnemiesSpawner> neighbours;
 
 
 
@@ -52,7 +52,7 @@ public class Rooms : MonoBehaviour
         polyCollider = GetComponent<PolygonCollider2D>();
         //body = GetComponent<Rigidbody2D>();
         //polyCollider.enabled = false;
-        neighbours = new List<Transform>();
+        neighbours = new List<EnnemiesSpawner>();
 
         contacts = new List<ContactPoint2D>();
         inBetweenPoints = new List<Vector2>();
@@ -126,9 +126,9 @@ public class Rooms : MonoBehaviour
                 RaycastHit2D[] hits = Physics2D.CircleCastAll(gameObject.transform.position, circleCastRadius, Vector2.zero);
                 foreach (RaycastHit2D hit in hits)
                 {
-                    if (hit.collider != gameObject.GetComponent<BoxCollider2D>())
+                    if (hit.collider != gameObject.GetComponent<BoxCollider2D>()&&hit.collider.gameObject.GetComponent<EnnemiesSpawner>())
                     {
-                        neighbours.Add(hit.transform);
+                        neighbours.Add(hit.transform.gameObject.GetComponent<EnnemiesSpawner>());
                     }
                 }
                 step = Step.CHECK_COLLISIONS;
@@ -194,8 +194,8 @@ public class Rooms : MonoBehaviour
                 Destroy(polyCollider);
                 Destroy(collider);
                 WallOpening();
-                EnnemiesSpawner ennemies = GetComponent<EnnemiesSpawner>();
-                ennemies.ActivateSpawn();
+                //EnnemiesSpawner ennemies = GetComponent<EnnemiesSpawner>();
+                //ennemies.ActivateSpawn();
                 step = Step.END;
                 break;
             case Step.END:
@@ -415,6 +415,24 @@ public class Rooms : MonoBehaviour
         }
         Instantiate(playerPortal, spawnPosition, Quaternion.identity);
 
+    }
+
+
+    void SpawnInNeighbours()
+    {
+        foreach (EnnemiesSpawner neighbour in neighbours)
+        {
+            neighbour.ActivateSpawn();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("ennemy"))
+        {
+            Debug.Log("PLAYER IN !");
+            SpawnInNeighbours();
+        }
     }
 
     private void OnDrawGizmos()

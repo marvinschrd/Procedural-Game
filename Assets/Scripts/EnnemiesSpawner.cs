@@ -12,11 +12,14 @@ public class EnnemiesSpawner : MonoBehaviour
     RaycastHit2D[] hit;
 
     bool selectSpawn = false;
+    bool alreadySPawned = false;
+
+    Rooms room;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        room = GetComponent<Rooms>();
     }
 
 
@@ -91,5 +94,8 @@ public class EnnemiesSpawner : MonoBehaviour
         selectSpawn = true;
     }
 
+   
+
+   
 
 }
