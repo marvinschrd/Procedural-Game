@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3854805334447590655}
   m_Layer: 0
   m_Name: EnemyCyclop
-  m_TagString: Player
+  m_TagString: ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

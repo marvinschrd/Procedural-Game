@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5768887780238499627}
   - component: {fileID: 8813995483153706758}
   - component: {fileID: 6538733268283882651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DamagedColumn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5081354137190985371}
   - component: {fileID: 1711029910904341375}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shadows_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

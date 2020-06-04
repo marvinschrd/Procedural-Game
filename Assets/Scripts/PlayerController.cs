@@ -86,5 +86,15 @@ public class PlayerController : MonoBehaviour
 
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.GetComponent<Rooms>())
+        {
+            Rooms room = collision.gameObject.GetComponent<Rooms>();
+            Debug.Log("FDP");
+            room.SpawnInNeighbours();
+        }
+    }
 }
   

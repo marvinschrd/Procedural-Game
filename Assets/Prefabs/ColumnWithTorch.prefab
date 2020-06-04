@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7902957661889599273}
   - component: {fileID: 5695394182075205670}
   - component: {fileID: 3337927938902161690}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColumnWithTorch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,6 +187,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shadows_1
       objectReference: {fileID: 0}
+    - target: {fileID: 694509252628345006, guid: e6f43c938d9a0bf45b52455a64d1a629,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6f43c938d9a0bf45b52455a64d1a629, type: 3}
 --- !u!4 &4808806973901303498 stripped
@@ -206,6 +211,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Torch_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 980758258324444750, guid: e7bb2c1aa196f5944974746e8685fb05,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6843194763257433005, guid: e7bb2c1aa196f5944974746e8685fb05,
         type: 3}

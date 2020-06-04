@@ -3149,7 +3149,7 @@ GameObject:
   - component: {fileID: 3149627753681141136}
   - component: {fileID: 7865740665984720693}
   - component: {fileID: 7978966487713131659}
-  - component: {fileID: 6399781366072146956}
+  - component: {fileID: -4397547234221973424}
   m_Layer: 8
   m_Name: room14
   m_TagString: Untagged
@@ -3349,6 +3349,35 @@ MonoBehaviour:
   monsterPortal: {fileID: 737122100649376754, guid: 774bf731e0d125140b34dcfb0a536398,
     type: 3}
   roomMonsterCapacity: 3
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 512
+--- !u!61 &-4397547234221973424
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6768830684128363373}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7255361909467150439
 GameObject:
   m_ObjectHideFlags: 0

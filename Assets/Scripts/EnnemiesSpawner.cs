@@ -10,6 +10,8 @@ public class EnnemiesSpawner : MonoBehaviour
 
     Vector3 spawnPosition;
     RaycastHit2D[] hit;
+    Collider2D[] hit2;
+   [SerializeField] LayerMask roomLayer;
 
     bool selectSpawn = false;
     bool alreadySPawned = false;
@@ -19,6 +21,7 @@ public class EnnemiesSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         room = GetComponent<Rooms>();
     }
 
@@ -53,15 +56,25 @@ public class EnnemiesSpawner : MonoBehaviour
                 state = State.CHECK_SPAWN;
                 break;
             case State.CHECK_SPAWN:
-
-                hit = Physics2D.CircleCastAll(spawnPosition, 0.1f,Vector2.zero);
+                Debug.Log("CHECKING SPAWN");
+                 hit = Physics2D.CircleCastAll(spawnPosition, 0.1f,Vector2.zero,roomLayer);
+               // hit2 = Physics2D.OverlapCircleAll(spawnPosition, 0.1f, roomLayer);
+                //hit = Physics2D.CircleCastAll(spawnPosition, 0.1f, Vector2.zero, LayerMask.GetMask("Wall"));
 
                 //state = State.SPAWN;
 
                 if (hit.Length>0)
                 {
                     Debug.Log("HIT" + hit[0].transform.gameObject.name);
-                    state = State.SELECT_SPAWN;
+                    Debug.Log("HIT" + hit[0].transform.gameObject.layer);
+                    if (hit[0].transform.gameObject.layer == LayerMask.NameToLayer("Walls"))
+                    {
+                        state = State.SELECT_SPAWN;
+                    }
+                    else
+                    {
+                        state = State.SPAWN;
+                    }
                 }
                 else
                 {
@@ -91,6 +104,7 @@ public class EnnemiesSpawner : MonoBehaviour
 
    public void ActivateSpawn()
     {
+        Debug.Log("SPAWNACTIVATED");
         selectSpawn = true;
     }
 

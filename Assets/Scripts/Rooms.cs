@@ -120,16 +120,23 @@ public class Rooms : MonoBehaviour
                 }
                 break;
             case Step.GET_NEIGHBOURS:
+                Debug.Log("GETTING NEIGBOURS");
                 collider.enabled = false;
-                Vector2 colliderSize = new Vector2(collider.size.x, collider.size.y);
-                circleCastRadius = colliderSize.magnitude;
+                Vector2 colliderSize = new Vector2(transform.localScale.x, transform.localScale.y);
+                circleCastRadius = colliderSize.magnitude/2;
                 RaycastHit2D[] hits = Physics2D.CircleCastAll(gameObject.transform.position, circleCastRadius, Vector2.zero);
                 foreach (RaycastHit2D hit in hits)
                 {
                     if (hit.collider != gameObject.GetComponent<BoxCollider2D>()&&hit.collider.gameObject.GetComponent<EnnemiesSpawner>())
                     {
                         neighbours.Add(hit.transform.gameObject.GetComponent<EnnemiesSpawner>());
+                       // Debug.Log(gameObject.name)
+                       // Debug.Log(gameObject.name +"NEIGHBOURS =" + neighbours[0].gameObject.name);
                     }
+                }
+                foreach(EnnemiesSpawner neighbours in neighbours)
+                {
+                    Debug.Log(gameObject.name + "NEIGHBOURS =" + neighbours.gameObject.name);
                 }
                 step = Step.CHECK_COLLISIONS;
                 break;
@@ -343,7 +350,7 @@ public class Rooms : MonoBehaviour
     public void FixPosition(float additionalTime)
     {
        // timerForPositionFix += additionalTime;
-        Debug.Log(timerForPositionFix);
+       // Debug.Log(timerForPositionFix);
         startTimer = true;
         body = GetComponent<Rigidbody2D>();
         if (body == null)
@@ -369,7 +376,7 @@ public class Rooms : MonoBehaviour
         {
             //Gizmos.DrawWireSphere(inBetweenPoints[i], 0.5f);
             //Gizmos.color = Color.black;
-            Debug.Log("inbetween point" + inBetweenPoints[i]);
+           // Debug.Log("inbetween point" + inBetweenPoints[i]);
         }
     }
 
@@ -419,18 +426,19 @@ public class Rooms : MonoBehaviour
     }
 
 
-    void SpawnInNeighbours()
+   public void SpawnInNeighbours()
     {
         foreach (EnnemiesSpawner neighbour in neighbours)
         {
+            Debug.Log("SPAWNNEIGHBOURS");
             neighbour.ActivateSpawn();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.CompareTag("ennemy"))
+       // Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("PLAYER IN !");
             SpawnInNeighbours();
@@ -447,5 +455,6 @@ public class Rooms : MonoBehaviour
                 Gizmos.color = Color.black;
             }
         }
+        Gizmos.DrawWireSphere(transform.position, new Vector2(transform.localScale.x, transform.localScale.y).magnitude/2);
     }
 }

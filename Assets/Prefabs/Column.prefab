@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5242032547826259882}
   - component: {fileID: 1388743155428010600}
   - component: {fileID: 1673824022907356173}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Column
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5226848433180402913}
   - component: {fileID: 1169121701094085432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shadows_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
