@@ -22,6 +22,6 @@ public class Road : MonoBehaviour {
     }
 
     void OnValidate() {
-        uiRoadName_.text = soRoad_.roadName;
+       // uiRoadName_.text = soRoad_.roadName;
     }
 }

@@ -173,6 +173,7 @@ public class Rooms : MonoBehaviour
                     DrawCircles();
                     //WallOpening();
                     Destroy(body);
+                   // body.bodyType = RigidbodyType2D.Static;
                 }
                 step = Step.BUILD_WALLS;
                 break;
@@ -182,7 +183,7 @@ public class Rooms : MonoBehaviour
                 if (placeWall)
                 {
                     placeWall = false;
-                    Destroy(body);
+                    // Destroy(body);
                     SpawnUpWall();
                     SpawnLeftWall();
                     SpawnRightWall();
@@ -428,6 +429,7 @@ public class Rooms : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.CompareTag("ennemy"))
         {
             Debug.Log("PLAYER IN !");

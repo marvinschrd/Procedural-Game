@@ -1,0 +1,3059 @@
+fileFormatVersion: 2
+guid: f212ad2f5b353ab43b4f6a02d43b03d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1140639759771690267
+    second: Idle1
+  - first:
+      213: -6276650585684883450
+    second: Idle2
+  - first:
+      213: -2554484274720694020
+    second: Idle3
+  - first:
+      213: 7918831258952067894
+    second: Idle4
+  - first:
+      213: -8157543007063071329
+    second: Ghost_Sprite_Sheet_4
+  - first:
+      213: 4181967763856260282
+    second: Idle5
+  - first:
+      213: -9018568433011641516
+    second: Idle6
+  - first:
+      213: -7109959577416572739
+    second: Move1
+  - first:
+      213: -3828030820253050496
+    second: Move2
+  - first:
+      213: -3477258984379617504
+    second: Move3
+  - first:
+      213: 4831451828186730849
+    second: Ghost_Sprite_Sheet_10
+  - first:
+      213: 6808956533230811375
+    second: Move4
+  - first:
+      213: 7675591163713375922
+    second: Move5
+  - first:
+      213: -4638276393710877672
+    second: Move6
+  - first:
+      213: 8320565863117179578
+    second: Move7
+  - first:
+      213: 3897896605331654028
+    second: Ghost_Sprite_Sheet_15
+  - first:
+      213: 5914096728728647493
+    second: Ghost_Sprite_Sheet_16
+  - first:
+      213: -4635883390738638184
+    second: Ghost_Sprite_Sheet_17
+  - first:
+      213: -6366733211502286369
+    second: Ghost_Sprite_Sheet_18
+  - first:
+      213: -6039233399317959243
+    second: Ghost_Sprite_Sheet_19
+  - first:
+      213: -7089611223333199524
+    second: Ghost_Sprite_Sheet_20
+  - first:
+      213: 6955588501724984546
+    second: Ghost_Sprite_Sheet_21
+  - first:
+      213: 4449160831294618501
+    second: Ghost_Sprite_Sheet_22
+  - first:
+      213: 716950699229731625
+    second: Ghost_Sprite_Sheet_23
+  - first:
+      213: 8808311943436558164
+    second: Ghost_Sprite_Sheet_24
+  - first:
+      213: -6079245245529041449
+    second: Ghost_Sprite_Sheet_25
+  - first:
+      213: 3007114618986968845
+    second: Ghost_Sprite_Sheet_26
+  - first:
+      213: 453637542387336711
+    second: Ghost_Sprite_Sheet_27
+  - first:
+      213: -1676568635065286762
+    second: Ghost_Sprite_Sheet_28
+  - first:
+      213: 2122900919513800792
+    second: Ghost_Sprite_Sheet_29
+  - first:
+      213: -1444821190247217899
+    second: Ghost_Sprite_Sheet_30
+  - first:
+      213: 5318591402745084969
+    second: Ghost_Sprite_Sheet_31
+  - first:
+      213: -3343827627714691885
+    second: Spawn3
+  - first:
+      213: -73936091004771793
+    second: Spawn4
+  - first:
+      213: 5183282073145337665
+    second: Spawn5
+  - first:
+      213: 419752091600373349
+    second: Spawn6
+  - first:
+      213: 5216876901217421300
+    second: Spawn10
+  - first:
+      213: -8145863407612576565
+    second: Spawn1
+  - first:
+      213: 816657945140170584
+    second: Spawn2
+  - first:
+      213: -5461878999163923337
+    second: Spawn7
+  - first:
+      213: 3041666194987505168
+    second: Ghost_Sprite_Sheet_40
+  - first:
+      213: -3814348016334992703
+    second: Ghost_Sprite_Sheet_41
+  - first:
+      213: 6909340800082576559
+    second: Ghost_Sprite_Sheet_42
+  - first:
+      213: 866544441483994005
+    second: Ghost_Sprite_Sheet_43
+  - first:
+      213: -6201943335448447683
+    second: Ghost_Sprite_Sheet_44
+  - first:
+      213: -5083870931444846198
+    second: Ghost_Sprite_Sheet_45
+  - first:
+      213: -7821495637959669738
+    second: Ghost_Sprite_Sheet_46
+  - first:
+      213: 5729393966273107168
+    second: Ghost_Sprite_Sheet_47
+  - first:
+      213: 9213036549769125129
+    second: Die1
+  - first:
+      213: -5545225828719799276
+    second: Die2
+  - first:
+      213: 5283715681325672197
+    second: Ghost_Sprite_Sheet_50
+  - first:
+      213: 8327654202991364790
+    second: Die3
+  - first:
+      213: 1413684774022799093
+    second: Ghost_Sprite_Sheet_52
+  - first:
+      213: 6039358398179444939
+    second: Die4
+  - first:
+      213: 6071969261965364989
+    second: Ghost_Sprite_Sheet_54
+  - first:
+      213: -8752493274969590523
+    second: Die5
+  - first:
+      213: -3513000207637098218
+    second: Die7
+  - first:
+      213: 8198262333525036811
+    second: Die6
+  - first:
+      213: -6615401824091211462
+    second: Die8
+  - first:
+      213: 759609233952865475
+    second: Die9
+  - first:
+      213: -3245042363090538961
+    second: Ghost_Sprite_Sheet_60
+  - first:
+      213: 7019940769471767883
+    second: Ghost_Sprite_Sheet_61
+  - first:
+      213: 18736452117711895
+    second: Ghost_Sprite_Sheet_62
+  - first:
+      213: 2657936589314067973
+    second: Ghost_Sprite_Sheet_63
+  - first:
+      213: -7099614449609019758
+    second: Ghost_Sprite_Sheet_64
+  - first:
+      213: 24334952711359656
+    second: Ghost_Sprite_Sheet_65
+  - first:
+      213: 8754292657197479772
+    second: Ghost_Sprite_Sheet_66
+  - first:
+      213: 8816500900915601430
+    second: Ghost_Sprite_Sheet_67
+  - first:
+      213: -3897788496487260620
+    second: Ghost_Sprite_Sheet_68
+  - first:
+      213: -1259157529254381922
+    second: Ghost_Sprite_Sheet_69
+  - first:
+      213: 4493777314939261858
+    second: Ghost_Sprite_Sheet_70
+  - first:
+      213: -1168243054267855722
+    second: Ghost_Sprite_Sheet_71
+  - first:
+      213: -1864952842151504548
+    second: Ghost_Sprite_Sheet_72
+  - first:
+      213: -1998299828763341703
+    second: Ghost_Sprite_Sheet_73
+  - first:
+      213: -4578970062158853431
+    second: Ghost_Sprite_Sheet_74
+  - first:
+      213: -331316190420113772
+    second: Ghost_Sprite_Sheet_75
+  - first:
+      213: -3647498746590292208
+    second: Ghost_Sprite_Sheet_76
+  - first:
+      213: 5046100368591659529
+    second: Ghost_Sprite_Sheet_77
+  - first:
+      213: -2537450940610231973
+    second: Ghost_Sprite_Sheet_78
+  - first:
+      213: -6290785428955096266
+    second: Ghost_Sprite_Sheet_79
+  - first:
+      213: -908186557598844614
+    second: Ghost_Sprite_Sheet_80
+  - first:
+      213: -6929821102314890024
+    second: Ghost_Sprite_Sheet_81
+  - first:
+      213: -1656128736188599516
+    second: Ghost_Sprite_Sheet_82
+  - first:
+      213: -1954221947568526760
+    second: Ghost_Sprite_Sheet_83
+  - first:
+      213: -3544207992961899748
+    second: Ghost_Sprite_Sheet_84
+  - first:
+      213: 1313928810694008455
+    second: Ghost_Sprite_Sheet_85
+  - first:
+      213: 837139472167658871
+    second: Ghost_Sprite_Sheet_86
+  - first:
+      213: 5955467628469507400
+    second: Ghost_Sprite_Sheet_87
+  - first:
+      213: -639691267363978604
+    second: Ghost_Sprite_Sheet_88
+  - first:
+      213: 1586608991738716240
+    second: Ghost_Sprite_Sheet_89
+  - first:
+      213: -4306064991595553810
+    second: Ghost_Sprite_Sheet_90
+  - first:
+      213: 1203961102808366588
+    second: Ghost_Sprite_Sheet_91
+  - first:
+      213: 4643069164435438775
+    second: Ghost_Sprite_Sheet_92
+  - first:
+      213: 1741525108194128866
+    second: Ghost_Sprite_Sheet_93
+  - first:
+      213: 8735674815440224162
+    second: Ghost_Sprite_Sheet_94
+  - first:
+      213: -4015702961040008050
+    second: Ghost_Sprite_Sheet_95
+  - first:
+      213: 3685222230274304167
+    second: Ghost_Sprite_Sheet_96
+  - first:
+      213: -1924953629806407116
+    second: Ghost_Sprite_Sheet_97
+  - first:
+      213: -7069796170620011734
+    second: Ghost_Sprite_Sheet_98
+  - first:
+      213: -490535096672055720
+    second: Ghost_Sprite_Sheet_99
+  - first:
+      213: -4768878165943380967
+    second: Ghost_Sprite_Sheet_100
+  - first:
+      213: 2817181513755091917
+    second: Ghost_Sprite_Sheet_101
+  - first:
+      213: -2071476624372846848
+    second: Ghost_Sprite_Sheet_102
+  - first:
+      213: -6980359979102538898
+    second: Ghost_Sprite_Sheet_103
+  - first:
+      213: 6417552932738125982
+    second: Ghost_Sprite_Sheet_104
+  - first:
+      213: 157169688511645456
+    second: Ghost_Sprite_Sheet_105
+  - first:
+      213: 6819445630701573988
+    second: Ghost_Sprite_Sheet_106
+  - first:
+      213: -7678161633805230236
+    second: Ghost_Sprite_Sheet_107
+  - first:
+      213: 8837226945831488885
+    second: Ghost_Sprite_Sheet_108
+  - first:
+      213: 3018237512528339306
+    second: Ghost_Sprite_Sheet_109
+  - first:
+      213: -612259391767256586
+    second: Ghost_Sprite_Sheet_110
+  - first:
+      213: -5404843949665667392
+    second: Ghost_Sprite_Sheet_111
+  - first:
+      213: -1011827732746483658
+    second: Ghost_Sprite_Sheet_112
+  - first:
+      213: -2480580610630242782
+    second: Ghost_Sprite_Sheet_113
+  - first:
+      213: -6414916786401303559
+    second: Ghost_Sprite_Sheet_114
+  - first:
+      213: 3311544175890993692
+    second: Ghost_Sprite_Sheet_115
+  - first:
+      213: -1823419940291026592
+    second: Ghost_Sprite_Sheet_116
+  - first:
+      213: -3834433689262916531
+    second: Ghost_Sprite_Sheet_117
+  - first:
+      213: 4428500967146825625
+    second: Ghost_Sprite_Sheet_118
+  - first:
+      213: 2584562060339059812
+    second: Ghost_Sprite_Sheet_119
+  - first:
+      213: -6057960510008560228
+    second: Ghost_Sprite_Sheet_120
+  - first:
+      213: 2205810222787755793
+    second: Ghost_Sprite_Sheet_121
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 426
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea1f1e8e22ab20f0800000000000000
+      internalID: -1140639759771690267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 426
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60841052c8bd4e8a0800000000000000
+      internalID: -6276650585684883450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 425
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0a3fc1616ac8cd0800000000000000
+      internalID: -2554484274720694020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 426
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63be812031755ed60800000000000000
+      internalID: 7918831258952067894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 427
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95a8080bd59ace80800000000000000
+      internalID: -8157543007063071329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 425
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc79c23685590a30800000000000000
+      internalID: 4181967763856260282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 425
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4533ac7eacb97d280800000000000000
+      internalID: -9018568433011641516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 396
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0e2bc3f69545d90800000000000000
+      internalID: -7109959577416572739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 396
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089d191304a10eac0800000000000000
+      internalID: -3828030820253050496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 396
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f6404806b4ebfc0800000000000000
+      internalID: -3477258984379617504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 398
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1615b70f6d3cc0340800000000000000
+      internalID: 4831451828186730849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move4
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 396
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe83c4e34e54e7e50800000000000000
+      internalID: 6808956533230811375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 396
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be43421f7d258a60800000000000000
+      internalID: 7675591163713375922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move6
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 395
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81488cec13881afb0800000000000000
+      internalID: -4638276393710877672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 395
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba47597196987370800000000000000
+      internalID: 8320565863117179578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 364
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c858ef38f4c181630800000000000000
+      internalID: 3897896605331654028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 361
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547bb2bf3a7131250800000000000000
+      internalID: 5914096728728647493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 362
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ad3ea3e980aafb0800000000000000
+      internalID: -4635883390738638184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 364
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd969b460e1d4a7a0800000000000000
+      internalID: -6366733211502286369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 365
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd6af57835503ca0800000000000000
+      internalID: -6039233399317959243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 367
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c512a9d9724ac9d90800000000000000
+      internalID: -7089611223333199524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 366
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4fb19d3e6378060800000000000000
+      internalID: 6955588501724984546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 364
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bb5e114389ebd30800000000000000
+      internalID: 4449160831294618501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 364
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b5e05ccde13f900800000000000000
+      internalID: 716950699229731625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 330
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fdd5b4b096d3a70800000000000000
+      internalID: 8808311943436558164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 330
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d552cd88ae22aba0800000000000000
+      internalID: -6079245245529041449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 329
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d073a9740da6bb920800000000000000
+      internalID: 3007114618986968845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 330
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70647caf0f4ab4600800000000000000
+      internalID: 453637542387336711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 330
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f3f5195b1abb8e0800000000000000
+      internalID: -1676568635065286762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 330
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85068f0832f067d10800000000000000
+      internalID: 2122900919513800792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 330
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5158b5f48c6f2fbe0800000000000000
+      internalID: -1444821190247217899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 331
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c3112a3be6fc940800000000000000
+      internalID: 5318591402745084969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 297
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcbdeb2d765891d0800000000000000
+      internalID: -3343827627714691885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn4
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 297
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f226497548359fef0800000000000000
+      internalID: -73936091004771793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 297
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1476a745597bee740800000000000000
+      internalID: 5183282073145337665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 296
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5664199ad4243d500800000000000000
+      internalID: 419752091600373349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn10
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 297
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f74106c6e1166840800000000000000
+      internalID: 5216876901217421300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 295
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc3660b36414fe80800000000000000
+      internalID: -8145863407612576565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 296
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f8413031a555b00800000000000000
+      internalID: 816657945140170584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn7
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 297
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7741ba01df18334b0800000000000000
+      internalID: -5461878999163923337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 298
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0165b85f94b263a20800000000000000
+      internalID: 3041666194987505168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 297
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca03ac30b6b01bc0800000000000000
+      internalID: -3814348016334992703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 266
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa40905b9d8e2ef50800000000000000
+      internalID: 6909340800082576559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 263
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5932eb01495960c00800000000000000
+      internalID: 866544441483994005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 277
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d357e7d45654ee9a0800000000000000
+      internalID: -6201943335448447683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 262
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81bb47c2567279b0800000000000000
+      internalID: -5083870931444846198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 260
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61885274827747390800000000000000
+      internalID: -7821495637959669738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 267
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e499f9e475e28f40800000000000000
+      internalID: 5729393966273107168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 229
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ddda3ede74bdf70800000000000000
+      internalID: 9213036549769125129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 230
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414d5d71d766b03b0800000000000000
+      internalID: -5545225828719799276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 246
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507e397fa67835940800000000000000
+      internalID: 5283715681325672197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 230
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bac6953065c19370800000000000000
+      internalID: 8327654202991364790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 245
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fed10cdfca6e9310800000000000000
+      internalID: 1413684774022799093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 229
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc802ca177c10d350800000000000000
+      internalID: 6039358398179444939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 247
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe49828fd7f34450800000000000000
+      internalID: 6071969261965364989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die5
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 229
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50531763db5e88680800000000000000
+      internalID: -8752493274969590523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 229
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f8935f72416c170800000000000000
+      internalID: 8198262333525036811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 202
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45a5a4cfe6db6160800000000000000
+      internalID: 7019940769471767883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 202
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cc3d434b0924000800000000000000
+      internalID: 18736452117711895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 205
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e0491ee33e2e420800000000000000
+      internalID: 2657936589314067973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 206
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ee2d0064a197d90800000000000000
+      internalID: -7099614449609019758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 205
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac8cf3b284765000800000000000000
+      internalID: 24334952711359656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 204
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57f01c1ace7d7970800000000000000
+      internalID: 8754292657197479772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 203
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6106cf88bd08a5a70800000000000000
+      internalID: 8816500900915601430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 172
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ed549830648e9c0800000000000000
+      internalID: -3897788496487260620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 172
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96b88006e2968ee0800000000000000
+      internalID: -1259157529254381922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 172
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3d9aca8aa1d5e30800000000000000
+      internalID: 4493777314939261858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 172
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c0c0bb12199cfe0800000000000000
+      internalID: -1168243054267855722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 174
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5554b0654b5e16e0800000000000000
+      internalID: -1864952842151504548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 172
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c46d7a4ec9444e0800000000000000
+      internalID: -1998299828763341703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 172
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca8fd72dfa3470c0800000000000000
+      internalID: -4578970062158853431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 172
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4966ca12eade66bf0800000000000000
+      internalID: -331316190420113772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 140
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0179dca173b716dc0800000000000000
+      internalID: -3647498746590292208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 137
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902afd2cc89570640800000000000000
+      internalID: 5046100368591659529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 138
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5142f140d929ccd0800000000000000
+      internalID: -2537450940610231973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 140
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b9dec7bf3a2b8a0800000000000000
+      internalID: -6290785428955096266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 141
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39398c33297563f0800000000000000
+      internalID: -908186557598844614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 143
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcd3875c6454df90800000000000000
+      internalID: -6929821102314890024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 142
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423792160bf3409e0800000000000000
+      internalID: -1656128736188599516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 140
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ae7ea1e7531e4e0800000000000000
+      internalID: -1954221947568526760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 140
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13e761cb9170dec0800000000000000
+      internalID: -3544207992961899748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e5195ba430c3210800000000000000
+      internalID: 1313928810694008455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 106
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775e2022aed1e9b00800000000000000
+      internalID: 837139472167658871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 105
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8455342314216a250800000000000000
+      internalID: 5955467628469507400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 106
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492c9da7e2c5f17f0800000000000000
+      internalID: -639691267363978604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 106
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050e606c874c40610800000000000000
+      internalID: 1586608991738716240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 106
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb933464b8cd34c0800000000000000
+      internalID: -4306064991595553810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 106
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdb7408e3455b010800000000000000
+      internalID: 1203961102808366588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 107
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc7eb51ece7f6040800000000000000
+      internalID: 4643069164435438775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 74
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3b551ebd32b2810800000000000000
+      internalID: 1741525108194128866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 77
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aff3a706f95b3970800000000000000
+      internalID: 8735674815440224162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 87
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cd9bbde6b5548c0800000000000000
+      internalID: -4015702961040008050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a86fd1e71a842330800000000000000
+      internalID: 3685222230274304167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 74
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4325a4e5fd03945e0800000000000000
+      internalID: -1924953629806407116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 71
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bf6c717d903ed90800000000000000
+      internalID: -7069796170620011734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 73
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e0005bde44139f0800000000000000
+      internalID: -490535096672055720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 74
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91414dd139a81ddb0800000000000000
+      internalID: -4768878165943380967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 74
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc36b2329a3a81720800000000000000
+      internalID: 2817181513755091917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 73
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f2bbb3cf2a043e0800000000000000
+      internalID: -2071476624372846848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 42
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e637d312597c02f90800000000000000
+      internalID: -6980359979102538898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 39
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e905f13046abf0950800000000000000
+      internalID: 6417552932738125982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 53
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017023dbff06e2200800000000000000
+      internalID: 157169688511645456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 38
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4679e0f8ba983ae50800000000000000
+      internalID: 6819445630701573988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 36
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f9109bca0b17590800000000000000
+      internalID: -7678161633805230236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 43
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dcbc9e51324aa70800000000000000
+      internalID: 8837226945831488885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61a20eb60fe2e920800000000000000
+      internalID: 3018237512528339306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 8
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1e05bb351d087f0800000000000000
+      internalID: -612259391767256586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 22
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c632c950132ef4b0800000000000000
+      internalID: -5404843949665667392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 6
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638c1c7b90445f1f0800000000000000
+      internalID: -1011827732746483658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 21
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ea9aac315339dd0800000000000000
+      internalID: -2480580610630242782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 4
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f32cd2ab23a9f6a0800000000000000
+      internalID: -6414916786401303559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 23
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c121ff5f1e7f4fd20800000000000000
+      internalID: 3311544175890993692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 18
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061e696a939e1b6e0800000000000000
+      internalID: -1823419940291026592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 12
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c71b410ea59cac0800000000000000
+      internalID: -3834433689262916531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 13
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997a24a9a22357d30800000000000000
+      internalID: 4428500967146825625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 14
+        width: 78
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c167210853ed320800000000000000
+      internalID: 2584562060339059812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 13
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c957899330dcdeba0800000000000000
+      internalID: -6057960510008560228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Sprite_Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 17
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f7033f5bc9c9e10800000000000000
+      internalID: 2205810222787755793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die7
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 229
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611daef7ce05f3fc0800000000000000
+      internalID: -3513000207637098218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die8
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 230
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a397294471f5134a0800000000000000
+      internalID: -6615401824091211462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die9
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 230
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccfdddd29caa8a00800000000000000
+      internalID: 759609233952865475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2290,7 +2290,6 @@ GameObject:
   - component: {fileID: 4096733360984727594}
   - component: {fileID: 2839744904434472704}
   - component: {fileID: -7922197384279338700}
-  - component: {fileID: -1703941567041745085}
   m_Layer: 8
   m_Name: room9
   m_TagString: Untagged
@@ -3008,12 +3007,12 @@ PrefabInstance:
     - target: {fileID: 5768887780238499627, guid: 47f5bcd703b416d47a9530432a9211e2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0938
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 5768887780238499627, guid: 47f5bcd703b416d47a9530432a9211e2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0564
+      value: 0.095
       objectReference: {fileID: 0}
     - target: {fileID: 5768887780238499627, guid: 47f5bcd703b416d47a9530432a9211e2,
         type: 3}
@@ -3099,6 +3098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Column
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388743155428010600, guid: dad3c62fa6408084e91a9b26b78f5f9b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5242032547826259882, guid: dad3c62fa6408084e91a9b26b78f5f9b,
         type: 3}
@@ -3193,12 +3197,12 @@ PrefabInstance:
     - target: {fileID: 7902957661889599273, guid: 25573e41604da5941bd552e60b8f6f98,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.09
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 7902957661889599273, guid: 25573e41604da5941bd552e60b8f6f98,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0652
+      value: 0.087
       objectReference: {fileID: 0}
     - target: {fileID: 7902957661889599273, guid: 25573e41604da5941bd552e60b8f6f98,
         type: 3}

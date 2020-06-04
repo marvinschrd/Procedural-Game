@@ -37,25 +37,27 @@ public class WayPoint : MonoBehaviour {
     }
 
 #if UNITY_EDITOR
-    void OnDrawGizmos() {
-        Gizmos.color = Color.cyan;
-        Handles.color = new Color(0.0f, 1.0f, 1.0f, 0.5f);
-        
-        Handles.DrawWireDisc(transform.position, Vector3.up, 0.5f);
-        
-        if (neighbors == null) return;
-        Handles.color = new Color(0.0f, 1.0f, 1.0f, 0.75f);
-        Vector3 position = transform.position;
-        
-        foreach (Link neighbor in neighbors) {
-            Vector3 neighborPos = neighbor.wayPoint.transform.position;
-            Vector3 dir = (position - neighborPos).normalized;
-            
-            Handles.DrawDottedLine(position + Vector3.Cross(dir, Vector3.up) * 0.1f, neighborPos + Vector3.Cross(dir, Vector3.up) * 0.1f, 4.0f);
-        }
-    }
+        //void OnDrawGizmos()
+        //{
+        //    Gizmos.color = Color.cyan;
+        //    Handles.color = new Color(0.0f, 1.0f, 1.0f, 0.5f);
 
-    void OnDrawGizmosSelected() {
+        //    Handles.DrawWireDisc(transform.position, Vector3.up, 0.5f);
+
+        //    if (neighbors == null) return;
+        //    Handles.color = new Color(0.0f, 1.0f, 1.0f, 0.75f);
+        //    Vector3 position = transform.position;
+
+        //    foreach (Link neighbor in neighbors)
+        //    {
+        //        Vector3 neighborPos = neighbor.wayPoint.transform.position;
+        //        Vector3 dir = (position - neighborPos).normalized;
+
+        //        Handles.DrawDottedLine(position + Vector3.Cross(dir, Vector3.up) * 0.1f, neighborPos + Vector3.Cross(dir, Vector3.up) * 0.1f, 4.0f);
+        //    }
+        //}
+
+        void OnDrawGizmosSelected() {
         Gizmos.color = Color.cyan;
         Handles.color = new Color(0.0f, 1.0f, 1.0f, 1f);
         
