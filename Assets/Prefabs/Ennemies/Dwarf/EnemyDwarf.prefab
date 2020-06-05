@@ -189,9 +189,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ab7720cda412f4faa19e155ff1f15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 20
-  hurtTime: 0
+  health: 30
+  maxHealth: 30
+  hurtTime: 1
+  deadBody: {fileID: 3762534120647939180, guid: 55026fd948947944796098976f971991,
+    type: 3}
 --- !u!1001 &3171471315054068255
 PrefabInstance:
   m_ObjectHideFlags: 0
