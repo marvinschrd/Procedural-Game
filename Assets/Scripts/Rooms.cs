@@ -41,12 +41,15 @@ public class Rooms : MonoBehaviour
 
     [SerializeField] GameObject playerPortal;
 
+    List<AI.WayPoint> roomWaypoints;
+
     // Start is called before the first frame update
     void Start()
     {
-       // Debug.Break();
+        // Debug.Break();
 
-
+        roomWaypoints = new List<AI.WayPoint>();
+      //  roomWaypoints = FindObjectsOfType<AI.WayPoint>()
         RoomSpawner = FindObjectOfType<RoomSpawner>();
         collider = GetComponent<BoxCollider2D>();
         polyCollider = GetComponent<PolygonCollider2D>();

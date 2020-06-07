@@ -7,31 +7,33 @@ using UnityEngine.Assertions.Comparers;
 using UnityEngine.Assertions.Must;
 
 namespace AI {
-public class PathFinder : MonoBehaviour {
-    static PathFinder instance_;
+    public class PathFinder : MonoBehaviour {
+        static PathFinder instance_;
 
-    List<WayPoint> wayPoints_ = new List<WayPoint>();
+        List<WayPoint> wayPoints_ = new List<WayPoint>();
 
-    public static PathFinder Instance {
-        get => instance_;
-    }
-
-    void Awake() {
-        if (instance_ == null) {
-            instance_ = this;
-        } else {
-            Destroy(this);
+        public static PathFinder Instance {
+            get => instance_;
         }
-    }
 
-    public void RegisterWayPoint(WayPoint wayPoint) {
-        wayPoints_.Add(wayPoint);
-    }
+        void Awake() {
+            if (instance_ == null) {
+                instance_ = this;
+            } else {
+                Destroy(this);
+            }
+        }
 
-    public void UnregisterWayPoint(WayPoint wayPoint) {
-        wayPoints_.Remove(wayPoint);
-    }
-    
+        public void RegisterWayPoint(WayPoint wayPoint) {
+            wayPoints_.Add(wayPoint);
+        }
+
+        public void UnregisterWayPoint(WayPoint wayPoint) {
+            wayPoints_.Remove(wayPoint);
+        }
+
+      
+
     public List<Vector3> GetPath(Vector3 startPosition, Vector3 endPosition) {
         return FindPath(startPosition, endPosition);
     }
@@ -144,7 +146,12 @@ public class PathFinder : MonoBehaviour {
         return result;
     }
     
-    static float ManhattanDistance(Vector3 pos1, Vector3 pos2)
+    public List<WayPoint> GiveWaypoints()
+        {
+            
+            return wayPoints_;
+        }
+   public float ManhattanDistance(Vector3 pos1, Vector3 pos2)
     {
         return Mathf.Abs(pos1.x - pos2.x) + Mathf.Abs(pos1.y - pos2.y);
     }

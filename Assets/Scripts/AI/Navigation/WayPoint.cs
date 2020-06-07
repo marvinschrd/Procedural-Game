@@ -23,9 +23,9 @@ public class WayPoint : MonoBehaviour {
         PathFinder.Instance.RegisterWayPoint(this);
     }
 
-    void OnDestroy() {
-        PathFinder.Instance.UnregisterWayPoint(this);
-    }
+    //void OnDestroy() {
+    //    PathFinder.Instance.UnregisterWayPoint(this);
+    //}
 
     void OnValidate() {
         for (int i = 0; i < neighbors.Count; i++) {

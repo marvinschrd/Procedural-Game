@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1430894152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752466992228488418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc55a667b15c402498bea3f2563ac0b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionSprite_: {fileID: 5029665907276739649}
+  attackAreaSprite_: {fileID: 5029665907276739649}
+  fadingDistance_: 0
+  disableDistance_: 0
 --- !u!114 &1223032549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,7 +28,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd0cc362aecc35438044cf99078d889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteColor_: {r: 0, g: 0, b: 0, a: 0}
   shadowPosition_: {fileID: 1430894152}
   speedMovements_: 0
   stoppingDistance_: 0.1
@@ -29,26 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c08e50dd8838eb41ae246798fddccb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed_: 5
   stoppingDistance_: 0.1
---- !u!114 &1430894152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4752466992228488418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc55a667b15c402498bea3f2563ac0b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionSprite_: {fileID: 5029665907276739649}
-  positionColor_: {r: 0, g: 0, b: 0, a: 0}
-  attackAreaSprite_: {fileID: 5029665907276739649}
-  attackAreaColor_: {r: 0, g: 0, b: 0, a: 0}
-  fadingDistance_: 0
-  disableDistance_: 0
 --- !u!1001 &3707867798117289333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56,6 +52,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7660661823385151901, guid: 443bcac5a814dbc4ca581e9b0be31303,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8554596702931876151, guid: 443bcac5a814dbc4ca581e9b0be31303,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -124,7 +125,7 @@ PrefabInstance:
     - target: {fileID: 8554596702931876174, guid: 443bcac5a814dbc4ca581e9b0be31303,
         type: 3}
       propertyPath: m_Name
-      value: EnemyCyclop
+      value: EnemyCyclop Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 443bcac5a814dbc4ca581e9b0be31303, type: 3}
