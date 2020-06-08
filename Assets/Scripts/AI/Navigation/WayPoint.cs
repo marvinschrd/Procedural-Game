@@ -23,18 +23,19 @@ public class WayPoint : MonoBehaviour {
         PathFinder.Instance.RegisterWayPoint(this);
     }
 
-    //void OnDestroy() {
-    //    PathFinder.Instance.UnregisterWayPoint(this);
-    //}
-
-    void OnValidate() {
-        for (int i = 0; i < neighbors.Count; i++) {
-            Link neighbor = neighbors[i];
-            neighbor.distance = (Vector3.Distance(transform.position, neighbor.wayPoint.transform.position));
-            
-            neighbors[i] = neighbor;
+        void OnDestroy()
+        {
+            PathFinder.Instance.UnregisterWayPoint(this);
         }
-    }
+
+        //void OnValidate() {
+        //    for (int i = 0; i < neighbors.Count; i++) {
+        //        Link neighbor = neighbors[i];
+        //        neighbor.distance = (Vector3.Distance(transform.position, neighbor.wayPoint.transform.position));
+
+        //        neighbors[i] = neighbor;
+        //    }
+        //}
 
 #if UNITY_EDITOR
         //void OnDrawGizmos()
@@ -63,9 +64,9 @@ public class WayPoint : MonoBehaviour {
         
         Handles.DrawSolidDisc(transform.position, Vector3.up, 0.5f);
 
-        if (transform.hasChanged) {
-            OnValidate();
-        }
+        //if (transform.hasChanged) {
+        //    OnValidate();
+        //}
         
         if (neighbors == null) return;
         Handles.color = new Color(0.0f, 1.0f, 1.0f, 1f);

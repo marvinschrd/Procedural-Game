@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2594231686810483772}
   - component: {fileID: 3854805334447590655}
   - component: {fileID: -8564590414044629515}
+  - component: {fileID: -5185029559936679286}
   m_Layer: 0
   m_Name: EnemyCyclop
   m_TagString: ennemy
@@ -167,7 +168,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4100708668626529519}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fbb3aed7cf71124f9ad74baafd7dc6d, type: 3}
   m_Name: 
@@ -208,6 +209,19 @@ MonoBehaviour:
   hurtTime: 0.4
   deadBody: {fileID: 1218431063528368685, guid: e4a02a5d71d5ec444960a6da3bb9251e,
     type: 3}
+--- !u!114 &-5185029559936679286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4100708668626529519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba93097e55ad1b5428b9961b4d9b7f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1001 &8112567125822437475
 PrefabInstance:
   m_ObjectHideFlags: 0

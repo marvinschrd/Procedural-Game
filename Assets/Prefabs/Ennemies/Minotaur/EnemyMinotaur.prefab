@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3128832403774701702}
   - component: {fileID: 1809515136003921195}
   - component: {fileID: 2623715512737646176}
+  - component: {fileID: 1671863471333198079}
   m_Layer: 0
   m_Name: EnemyMinotaur
   m_TagString: ennemy
@@ -153,7 +154,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809716877041171831}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fbb3aed7cf71124f9ad74baafd7dc6d, type: 3}
   m_Name: 
@@ -176,7 +177,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.74285716
+  m_Radius: 2.1794405
 --- !u!114 &2623715512737646176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +195,19 @@ MonoBehaviour:
   hurtTime: 1
   deadBody: {fileID: 1616963987817013589, guid: fe30b3301f26fe947b89c96c6396ab92,
     type: 3}
+--- !u!114 &1671863471333198079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809716877041171831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba93097e55ad1b5428b9961b4d9b7f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
 --- !u!1001 &6187101402958201885
 PrefabInstance:
   m_ObjectHideFlags: 0

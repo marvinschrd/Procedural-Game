@@ -19,7 +19,9 @@ public class BoarController : MonoBehaviour
     [SerializeField] float speed;
 
     int pathIndex;
-
+    int randomNumber = 0;
+    Vector3 randomPosition;
+    bool choseAnotherRandomPosition = true;
     float recalculationTimer = 3;
     PlayerController player;
 
@@ -36,16 +38,8 @@ public class BoarController : MonoBehaviour
         PathFinder = FindObjectOfType<AI.PathFinder>();
         player = FindObjectOfType<PlayerController>();
         anim = GetComponent<Animator>();
-        roomWaypoints = new List<AI.WayPoint>();
-        wayPoints = PathFinder.GiveWaypoints();
-        foreach(AI.WayPoint wayPoint in wayPoints )
-        {
-            if(wayPoint.gameObject.CompareTag(gameObject.tag))
-            {
-                roomWaypoints.Add(wayPoint);
-            }
-        }
 
+       
     }
     private void FixedUpdate()
     {
@@ -72,9 +66,26 @@ public class BoarController : MonoBehaviour
                 body.velocity = new Vector2(0f,0f);
                 break;
             case State.PATROLING:
-               
-
-
+                Debug.Log("PATROLING");
+                if(choseAnotherRandomPosition)
+                {
+                    Debug.Log("getting random path");
+                    randomPosition = (Vector3)Random.insideUnitCircle * 3 + transform.position;
+                    Debug.Log("random position =" + randomPosition);
+                    GetPath(randomPosition);
+                    choseAnotherRandomPosition = false;
+                }
+                GoToTarget(path[0]);
+                float patrolDistance = PathFinder.ManhattanDistance(transform.position,path[0]);
+                if(patrolDistance<=0.1f)
+                {
+                    Debug.Log("already at point");
+                    path.RemoveAt(0);
+                }
+                if (path.Count<=2)
+                {
+                    choseAnotherRandomPosition = true;
+                }
                 break;
             case State.GETPATH:
                 path = PathFinder.GetPath(transform.position, targetPosition);
@@ -99,9 +110,10 @@ public class BoarController : MonoBehaviour
                 {
                     path = PathFinder.GetPath(transform.position, player.GivePosition());
                 }
-                if(playerDistance>=5f)
+                if(playerDistance>=10f)
                 {
-                    state = State.IDLE;
+                    choseAnotherRandomPosition = true;
+                    state = State.PATROLING;
                 }
                 break;
             case State.ATTACKING:
@@ -137,16 +149,23 @@ public class BoarController : MonoBehaviour
 
     void GoToTarget(Vector3 targetPosition)
     {
+        Debug.Log("GO TO TARGET");
         //Debug.Log("MOVE TO TARGET");
         //Debug.Log("TARGET =" + targetPosition);
          body.velocity = (targetPosition - transform.position).normalized * speed ;
         xVelocity = body.velocity.x;
         yVelocity = body.velocity.y;
+        Debug.Log("BODY VELOCITY = " + body.velocity);
         //direction = new Vector2(path[pathIndex].x * speed, path[pathIndex].y * speed);
       //  transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.fixedDeltaTime);
-        Debug.Log(direction);
-        Debug.Log(direction.x);
+        //Debug.Log(direction);
+        //Debug.Log(direction.x);
       // Debug.Log("BODY VELOCITY =" + body.velocity);
+    }
+
+    void GetPath(Vector3 targetPosition)
+    {
+        path = PathFinder.GetPath(transform.position, targetPosition);
     }
 
     void StopMovement()

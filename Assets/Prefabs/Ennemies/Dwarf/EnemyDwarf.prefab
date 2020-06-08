@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3171471315473038718}
   - component: {fileID: 3171471315473038713}
   - component: {fileID: 3171471315473038689}
+  - component: {fileID: 331315329427863731}
   m_Layer: 0
   m_Name: EnemyDwarf
   m_TagString: ennemy
@@ -169,7 +170,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972266955977186958}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fbb3aed7cf71124f9ad74baafd7dc6d, type: 3}
   m_Name: 
@@ -194,6 +195,19 @@ MonoBehaviour:
   hurtTime: 1
   deadBody: {fileID: 3762534120647939180, guid: 55026fd948947944796098976f971991,
     type: 3}
+--- !u!114 &331315329427863731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972266955977186958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba93097e55ad1b5428b9961b4d9b7f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1001 &3171471315054068255
 PrefabInstance:
   m_ObjectHideFlags: 0

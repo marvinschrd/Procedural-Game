@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ennemy
   - Walls
+  - room1
   layers:
   - Default
   - TransparentFX
