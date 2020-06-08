@@ -12,6 +12,7 @@ public class Health : MonoBehaviour
 
     SpriteRenderer sprite;
     [SerializeField] GameObject deadBody;
+    [SerializeField] GameObject playablePrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,9 +56,11 @@ public class Health : MonoBehaviour
         hurtTimer = hurtTime;
     }
 
-    public void TakeHealth(float heal)
+
+    public void InstatiatePlayablePrefab()
     {
-        health += heal;
+        Instantiate(playablePrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 
 }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2413221310099265067}
   - component: {fileID: 2413221310099265066}
   - component: {fileID: 576982292}
+  - component: {fileID: 2010377866}
   m_Layer: 0
   m_Name: Dwarf
   m_TagString: Player
@@ -174,6 +175,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalAttack: {fileID: 6581030380546142179}
   HeavyAttack: {fileID: 6014717744310146956}
+--- !u!114 &2010377866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2413221310099265061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cb06b6045dbaa47a8c3948b3c8927f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  maxHealth: 10
+  ghost: {fileID: 0}
+  deadPlayer: {fileID: 0}
 --- !u!1001 &1545849524
 PrefabInstance:
   m_ObjectHideFlags: 0

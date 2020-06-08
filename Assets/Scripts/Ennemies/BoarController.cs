@@ -5,6 +5,7 @@ using UnityEngine;
 public class BoarController : MonoBehaviour
 {
     AI.PathFinder PathFinder;
+    EnemyAttack EnemyAttack;
     List<AI.WayPoint> wayPoints;
     List<AI.WayPoint> roomWaypoints;
     Vector3 targetPosition;
@@ -28,6 +29,9 @@ public class BoarController : MonoBehaviour
     bool detectedTarget = false;
     float playerDistance = 0;
 
+    [SerializeField] float attackTime;
+    float attackTimer;
+
     Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -38,8 +42,8 @@ public class BoarController : MonoBehaviour
         PathFinder = FindObjectOfType<AI.PathFinder>();
         player = FindObjectOfType<PlayerController>();
         anim = GetComponent<Animator>();
-
-       
+        EnemyAttack = GetComponent<EnemyAttack>();
+        attackTimer = attackTime;
     }
     private void FixedUpdate()
     {
@@ -58,7 +62,7 @@ public class BoarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(state);
+       // Debug.Log(state);
         switch(state)
         {
             case State.IDLE:
@@ -66,12 +70,13 @@ public class BoarController : MonoBehaviour
                 body.velocity = new Vector2(0f,0f);
                 break;
             case State.PATROLING:
+                speed = 1;
                 Debug.Log("PATROLING");
                 if(choseAnotherRandomPosition)
                 {
                     Debug.Log("getting random path");
                     randomPosition = (Vector3)Random.insideUnitCircle * 3 + transform.position;
-                    Debug.Log("random position =" + randomPosition);
+                    //Debug.Log("random position =" + randomPosition);
                     GetPath(randomPosition);
                     choseAnotherRandomPosition = false;
                 }
@@ -93,6 +98,7 @@ public class BoarController : MonoBehaviour
                 state = State.FOLLOWING;
                 break;
             case State.FOLLOWING:
+                speed = 2;
                 GoToTarget(path[0]);
                 float distance = PathFinder.ManhattanDistance(transform.position, path[0]);
                 if(distance<=0.1f)
@@ -103,11 +109,12 @@ public class BoarController : MonoBehaviour
                 if(recalculationTimer<=0)
                 {
                     path = PathFinder.GetPath(transform.position, player.GivePosition());
-                    recalculationTimer = 3;
+                    recalculationTimer = 2;
                     playerDistance = PathFinder.ManhattanDistance(transform.position, player.GivePosition());
                 }
                 if(path.Count==0)
                 {
+                    Debug.Log("GOT TO ZERO");
                     path = PathFinder.GetPath(transform.position, player.GivePosition());
                 }
                 if(playerDistance>=10f)
@@ -115,9 +122,34 @@ public class BoarController : MonoBehaviour
                     choseAnotherRandomPosition = true;
                     state = State.PATROLING;
                 }
+                if(playerDistance<=0.5f)
+                {
+                    //state = State.ATTACKING;
+                    
+                   // Debug.Log("ATTACKING");
+                }
+                if(player==null)
+                {
+                    choseAnotherRandomPosition = true;
+                    state = State.PATROLING;
+                }
                 break;
             case State.ATTACKING:
-                StopMovement();
+                // Debug.Log("ATTACKING");
+                playerDistance = PathFinder.ManhattanDistance(transform.position, player.GivePosition());
+                if (playerDistance >= 0.5f)
+                {
+                    path = PathFinder.GetPath(transform.position, player.GivePosition());
+                    state = State.FOLLOWING;
+                }
+               // StopMovement();
+                //attackTimer -= Time.deltaTime;
+                //if(attackTimer<=0)
+                //{
+                //    EnemyAttack.Attack();
+                //    attackTimer = attackTime;
+                //}
+
                 break;
         }
         //Debug.Log("XVELOCITY =" + xVelocity);
@@ -155,7 +187,7 @@ public class BoarController : MonoBehaviour
          body.velocity = (targetPosition - transform.position).normalized * speed ;
         xVelocity = body.velocity.x;
         yVelocity = body.velocity.y;
-        Debug.Log("BODY VELOCITY = " + body.velocity);
+        //Debug.Log("BODY VELOCITY = " + body.velocity);
         //direction = new Vector2(path[pathIndex].x * speed, path[pathIndex].y * speed);
       //  transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.fixedDeltaTime);
         //Debug.Log(direction);
@@ -170,7 +202,7 @@ public class BoarController : MonoBehaviour
 
     void StopMovement()
     {
-        direction = new Vector2(path[pathIndex].x * 0, path[pathIndex].y * 0);
+       body.velocity = new Vector2(path[pathIndex].x * 0, path[pathIndex].y * 0);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
