@@ -26,8 +26,15 @@ public class EnemyAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerDistance = PathFinder.ManhattanDistance(transform.position, player.GivePosition());
-        
+        if (player != null)
+        {
+            playerDistance = PathFinder.ManhattanDistance(transform.position, player.GivePosition());
+        }
+        if(player==null)
+        {
+            Debug.Log("Player NULL");
+            player = FindObjectOfType<PlayerController>();
+        }
         if(playerDistance<=1.5f)
         {
             isCloseEnough = true;
@@ -41,7 +48,7 @@ public class EnemyAttack : MonoBehaviour
 
         if (isCloseEnough)
         {
-           
+            Debug.Log("ATTACK");
             Attack();
             isAttacking = true;
             attackTimer -= Time.deltaTime;
@@ -60,7 +67,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (!isAttacking)
         {
-            Debug.Log("ATTACK");
+           // Debug.Log("ATTACK");
             anim.SetTrigger("Attacking");
         }
     }

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 972266955977186944}
   - component: {fileID: 972266955977186945}
   - component: {fileID: 3171471315473038718}
-  - component: {fileID: 3171471315473038713}
   - component: {fileID: 3171471315473038689}
   - component: {fileID: 331315329427863731}
+  - component: {fileID: 3534416423975143916}
   m_Layer: 0
   m_Name: EnemyDwarf
   m_TagString: ennemy
@@ -116,10 +116,10 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972266955977186958}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -163,21 +163,6 @@ CircleCollider2D:
   m_Offset: {x: -0.056961656, y: 0}
   serializedVersion: 2
   m_Radius: 1.1916481
---- !u!114 &3171471315473038713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972266955977186958}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fbb3aed7cf71124f9ad74baafd7dc6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  playablePrefab: {fileID: 2413221310099265061, guid: 6d99bc10a66dec341b14fffd3b90b82b,
-    type: 3}
 --- !u!114 &3171471315473038689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +180,7 @@ MonoBehaviour:
   hurtTime: 1
   deadBody: {fileID: 3762534120647939180, guid: 55026fd948947944796098976f971991,
     type: 3}
+  playablePrefab: {fileID: 0}
 --- !u!114 &331315329427863731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +194,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  attackTime: 0
+--- !u!114 &3534416423975143916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972266955977186958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cebde4152c128a429b0108a90a348b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalAttack: {fileID: 8599570817828906824}
+  HeavyAttack: {fileID: 0}
+  attackCooldown: 1
 --- !u!1001 &3171471315054068255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -292,6 +294,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6bb8769ba0f33c4da2fbf571c92a303, type: 3}
+--- !u!1 &8599570817828906824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6581030379675870551, guid: f6bb8769ba0f33c4da2fbf571c92a303,
+    type: 3}
+  m_PrefabInstance: {fileID: 3171471315054068255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8599570817828906826 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6581030379675870549, guid: f6bb8769ba0f33c4da2fbf571c92a303,

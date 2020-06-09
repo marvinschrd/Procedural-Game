@@ -32,6 +32,8 @@ public class BoarController : MonoBehaviour
     [SerializeField] float attackTime;
     float attackTimer;
 
+    BlackBoard blackBoard;
+
     Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -40,10 +42,11 @@ public class BoarController : MonoBehaviour
         wayPoints = new List<AI.WayPoint>();
         path = new List<Vector3>();
         PathFinder = FindObjectOfType<AI.PathFinder>();
-        player = FindObjectOfType<PlayerController>();
+       // player = FindObjectOfType<PlayerController>();
         anim = GetComponent<Animator>();
         EnemyAttack = GetComponent<EnemyAttack>();
         attackTimer = attackTime;
+      //  blackBoard = FindObjectOfType<BlackBoard>();
     }
     private void FixedUpdate()
     {
@@ -101,9 +104,10 @@ public class BoarController : MonoBehaviour
                 speed = 2;
                 GoToTarget(path[0]);
                 float distance = PathFinder.ManhattanDistance(transform.position, path[0]);
-                if(distance<=0.1f)
+                if(distance<=0.1f&&path.Count>=2)
                 {
                     path.RemoveAt(0);
+                    Debug.Log("path count = " + path.Count);
                 }
                 recalculationTimer -= Time.deltaTime;
                 if(recalculationTimer<=0)
@@ -112,7 +116,7 @@ public class BoarController : MonoBehaviour
                     recalculationTimer = 2;
                     playerDistance = PathFinder.ManhattanDistance(transform.position, player.GivePosition());
                 }
-                if(path.Count==0)
+                if(path.Count==1)
                 {
                     Debug.Log("GOT TO ZERO");
                     path = PathFinder.GetPath(transform.position, player.GivePosition());
@@ -122,26 +126,32 @@ public class BoarController : MonoBehaviour
                     choseAnotherRandomPosition = true;
                     state = State.PATROLING;
                 }
-                if(playerDistance<=0.5f)
+                if(playerDistance<=1f)
                 {
-                    //state = State.ATTACKING;
-                    
-                   // Debug.Log("ATTACKING");
+                    Debug.Log("YOOOOOOOOO");
+                    state = State.ATTACKING;
                 }
-                if(player==null)
+                
+                if (player==null)
                 {
+                    Debug.Log("PLAYER NOT HERE");
                     choseAnotherRandomPosition = true;
+                    player = FindObjectOfType<PlayerController>();
+                    detectedTarget = false;
                     state = State.PATROLING;
                 }
                 break;
             case State.ATTACKING:
                 // Debug.Log("ATTACKING");
+                Debug.Log("close enough");
+                body.velocity = (player.GivePosition() - transform.position).normalized * speed;
                 playerDistance = PathFinder.ManhattanDistance(transform.position, player.GivePosition());
-                if (playerDistance >= 0.5f)
+                if (playerDistance >= 1f)
                 {
                     path = PathFinder.GetPath(transform.position, player.GivePosition());
                     state = State.FOLLOWING;
                 }
+               
                // StopMovement();
                 //attackTimer -= Time.deltaTime;
                 //if(attackTimer<=0)
@@ -152,8 +162,16 @@ public class BoarController : MonoBehaviour
 
                 break;
         }
+        if (player == null)
+        {
+            Debug.Log("PLAYER NOT HERE");
+            choseAnotherRandomPosition = true;
+            player = FindObjectOfType<PlayerController>();
+            detectedTarget = false;
+            state = State.PATROLING;
+        }
         //Debug.Log("XVELOCITY =" + xVelocity);
-        if( xVelocity * speed !=0 || yVelocity * speed !=0)
+        if ( xVelocity * speed !=0 || yVelocity * speed !=0)
         {
             anim.SetBool("isRunning", true);
         }
@@ -208,6 +226,7 @@ public class BoarController : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player")&&!detectedTarget)
         {
+            player = collision.GetComponent<PlayerController>();
             targetPosition = collision.transform.position;
             state = State.GETPATH;
             detectedTarget = true;

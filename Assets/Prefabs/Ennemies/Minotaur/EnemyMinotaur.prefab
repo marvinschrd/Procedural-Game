@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1809515136003921195}
   - component: {fileID: 2623715512737646176}
   - component: {fileID: 1671863471333198079}
+  - component: {fileID: 6344777544017999962}
   m_Layer: 0
   m_Name: EnemyMinotaur
   m_TagString: ennemy
@@ -138,7 +139,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -195,6 +196,8 @@ MonoBehaviour:
   hurtTime: 1
   deadBody: {fileID: 1616963987817013589, guid: fe30b3301f26fe947b89c96c6396ab92,
     type: 3}
+  playablePrefab: {fileID: 5530869059128454381, guid: 4e52ab235af0102499ab6463d59e09f4,
+    type: 3}
 --- !u!114 &1671863471333198079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +211,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
+  attackTime: 0
+--- !u!114 &6344777544017999962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809716877041171831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cebde4152c128a429b0108a90a348b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalAttack: {fileID: 1047222913652883832}
+  HeavyAttack: {fileID: 0}
+  attackCooldown: 1
 --- !u!1001 &6187101402958201885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -397,6 +416,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6bb8769ba0f33c4da2fbf571c92a303, type: 3}
+--- !u!1 &1047222913652883832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6581030379675870551, guid: f6bb8769ba0f33c4da2fbf571c92a303,
+    type: 3}
+  m_PrefabInstance: {fileID: 6187101403959026735}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1047222913652883834 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6581030379675870549, guid: f6bb8769ba0f33c4da2fbf571c92a303,
