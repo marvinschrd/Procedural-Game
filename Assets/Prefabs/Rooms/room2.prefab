@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3433678518027427944}
   - component: {fileID: 8946248246604577348}
   - component: {fileID: 4298652730933064639}
-  - component: {fileID: 4459985003336707614}
   m_Layer: 0
   m_Name: Point 37
   m_TagString: Untagged
@@ -117,20 +116,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 0}
     weight: 1
     distance: 0.16410917
---- !u!114 &4459985003336707614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468883132475426749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &745654182418002861
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +127,6 @@ GameObject:
   - component: {fileID: 2557541380448310392}
   - component: {fileID: 8142406280787676756}
   - component: {fileID: 3998976414376708015}
-  - component: {fileID: 3548232349280229902}
   m_Layer: 0
   m_Name: Point 23
   m_TagString: Untagged
@@ -242,20 +226,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 2713388438538544738}
     weight: 1
     distance: 1.4157676
---- !u!114 &3548232349280229902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 745654182418002861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424748471846778
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +237,6 @@ GameObject:
   - component: {fileID: 4166324469825757359}
   - component: {fileID: 7660718679541348995}
   - component: {fileID: 3301353544620602232}
-  - component: {fileID: 3139623393505406681}
   m_Layer: 0
   m_Name: Point 2
   m_TagString: Untagged
@@ -367,20 +336,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 3301353544854891632}
     weight: 1
     distance: 1.415846
---- !u!114 &3139623393505406681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424748471846778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424748806623853
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +347,6 @@ GameObject:
   - component: {fileID: 4166324469624157624}
   - component: {fileID: 7660718679877660564}
   - component: {fileID: 3301353544419518063}
-  - component: {fileID: 3139623393841200078}
   m_Layer: 0
   m_Name: Point 1
   m_TagString: Untagged
@@ -486,20 +440,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 3301353543933047621}
     weight: 1
     distance: 1.4167155
---- !u!114 &3139623393841200078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424748806623853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424748901345799
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,7 +451,6 @@ GameObject:
   - component: {fileID: 4166324469396000210}
   - component: {fileID: 7660718679937800190}
   - component: {fileID: 3301353544244846085}
-  - component: {fileID: 3139623393629029284}
   m_Layer: 0
   m_Name: Point 4
   m_TagString: Untagged
@@ -611,20 +550,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 3301353544086310813}
     weight: 2
     distance: 1.0046164
---- !u!114 &3139623393629029284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424748901345799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424749010074527
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,7 +561,6 @@ GameObject:
   - component: {fileID: 4166324469286100042}
   - component: {fileID: 7660718680080729702}
   - component: {fileID: 3301353544086310813}
-  - component: {fileID: 3139623394040795708}
   m_Layer: 0
   m_Name: Point 15
   m_TagString: Untagged
@@ -745,20 +669,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 990618001148367331}
     weight: 1
     distance: 1.4173998
---- !u!114 &3139623394040795708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424749010074527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424749125322567
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +680,6 @@ GameObject:
   - component: {fileID: 4166324469171101842}
   - component: {fileID: 7660718680230050494}
   - component: {fileID: 3301353543933047621}
-  - component: {fileID: 3139623393925017316}
   m_Layer: 0
   m_Name: Point 13
   m_TagString: Untagged
@@ -879,20 +788,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 9193515380696106693}
     weight: 1
     distance: 1.4127216
---- !u!114 &3139623393925017316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424749125322567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424749325324228
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +799,6 @@ GameObject:
   - component: {fileID: 4166324469097981969}
   - component: {fileID: 7660718680428507709}
   - component: {fileID: 3301353543871986630}
-  - component: {fileID: 3139623394388239975}
   m_Layer: 0
   m_Name: Point 7
   m_TagString: Untagged
@@ -1004,20 +898,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 0}
     weight: 1
     distance: 2.5685909
---- !u!114 &3139623394388239975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424749325324228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424749375518637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,7 +909,6 @@ GameObject:
   - component: {fileID: 4166324469047529592}
   - component: {fileID: 7660718680377985620}
   - component: {fileID: 3301353543922189231}
-  - component: {fileID: 3139623394338053646}
   m_Layer: 0
   m_Name: Point 6
   m_TagString: Untagged
@@ -1129,20 +1008,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 3301353544900921631}
     weight: 1
     distance: 1.4131259
---- !u!114 &3139623394338053646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424749375518637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424749733612734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,7 +1019,6 @@ GameObject:
   - component: {fileID: 4166324468688382827}
   - component: {fileID: 7660718680837845319}
   - component: {fileID: 3301353545623500988}
-  - component: {fileID: 3139623394533598493}
   m_Layer: 0
   m_Name: Point 12
   m_TagString: Untagged
@@ -1254,20 +1118,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 805430289594232045}
     weight: 1
     distance: 1.4168797
---- !u!114 &3139623394533598493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424749733612734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 1cfc14cd10159a74eb5c928659837bbd, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424750181238650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1129,6 @@ GameObject:
   - component: {fileID: 4166324468241014959}
   - component: {fileID: 7660718681185303171}
   - component: {fileID: 3301353545263690616}
-  - component: {fileID: 3139623395144511193}
   m_Layer: 0
   m_Name: Point 16
   m_TagString: Untagged
@@ -1385,20 +1234,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 990618001148367331}
     weight: 1
     distance: 0.9984615
---- !u!114 &3139623395144511193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424750181238650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424750355266845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1245,6 @@ GameObject:
   - component: {fileID: 4166324467932781256}
   - component: {fileID: 7660718681426444516}
   - component: {fileID: 3301353544900921631}
-  - component: {fileID: 3139623395389920446}
   m_Layer: 0
   m_Name: Point 18
   m_TagString: Untagged
@@ -1516,20 +1350,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 4805375882543648524}
     weight: 1
     distance: 0.15937187
---- !u!114 &3139623395389920446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424750355266845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424750395439932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,7 +1361,6 @@ GameObject:
   - component: {fileID: 4166324467901127913}
   - component: {fileID: 7660718681398855365}
   - component: {fileID: 3301353544932577086}
-  - component: {fileID: 3139623395358790303}
   m_Layer: 0
   m_Name: Point 5
   m_TagString: Untagged
@@ -1641,20 +1460,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 3301353544974894085}
     weight: 1
     distance: 1.4134554
---- !u!114 &3139623395358790303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424750395439932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424750436741127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,7 +1471,6 @@ GameObject:
   - component: {fileID: 4166324467994826706}
   - component: {fileID: 7660718681472634366}
   - component: {fileID: 3301353544974894085}
-  - component: {fileID: 3139623395432831396}
   m_Layer: 0
   m_Name: Point 17
   m_TagString: Untagged
@@ -1769,20 +1573,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 990618001148367331}
     weight: 2
     distance: 1.4126595
---- !u!114 &3139623395432831396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424750436741127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 0}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424750585478560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,7 +1584,6 @@ GameObject:
   - component: {fileID: 4166324467846224501}
   - component: {fileID: 7660718681588465753}
   - component: {fileID: 3301353544855259554}
-  - component: {fileID: 3139623395283440643}
   m_Layer: 0
   m_Name: Point 3
   m_TagString: Untagged
@@ -1894,20 +1683,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 3301353544086310813}
     weight: 1
     distance: 1.4132843
---- !u!114 &3139623395283440643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424750585478560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1222424750586108018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,7 +1694,6 @@ GameObject:
   - component: {fileID: 4166324467844284327}
   - component: {fileID: 7660718681589671307}
   - component: {fileID: 3301353544854891632}
-  - component: {fileID: 3139623395285430737}
   m_Layer: 0
   m_Name: Point 14
   m_TagString: Untagged
@@ -2028,20 +1802,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 9154695042520707432}
     weight: 1
     distance: 1.4142928
---- !u!114 &3139623395285430737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222424750586108018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1457719042097330687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,7 +1813,6 @@ GameObject:
   - component: {fileID: 4403945855602417194}
   - component: {fileID: 7970351435324179462}
   - component: {fileID: 2962511921146842621}
-  - component: {fileID: 3413193864408879196}
   m_Layer: 0
   m_Name: Point 28
   m_TagString: Untagged
@@ -2159,20 +1918,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 0}
     weight: 1
     distance: 0.16099435
---- !u!114 &3413193864408879196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457719042097330687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1529017044117833019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,7 +2011,6 @@ GameObject:
   - component: {fileID: 3577799712336573877}
   - component: {fileID: 7072745894896562073}
   - component: {fileID: 2713388438538544738}
-  - component: {fileID: 2586483669532081091}
   m_Layer: 0
   m_Name: Point 34
   m_TagString: Untagged
@@ -2375,20 +2119,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 0}
     weight: 1
     distance: 0.16026504
---- !u!114 &2586483669532081091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1765915949227315808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1840075024925705671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,7 +2130,6 @@ GameObject:
   - component: {fileID: 3507860656889471506}
   - component: {fileID: 7147205618306037822}
   - component: {fileID: 2643451524127797701}
-  - component: {fileID: 2516809049315028068}
   m_Layer: 0
   m_Name: Point 33
   m_TagString: Untagged
@@ -2500,20 +2229,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 0}
     weight: 1
     distance: 4.2346826
---- !u!114 &2516809049315028068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840075024925705671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &1947621893939238424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,7 +2240,6 @@ GameObject:
   - component: {fileID: 3612020052967125453}
   - component: {fileID: 7035163659983186913}
   - component: {fileID: 2747609809982087706}
-  - component: {fileID: 2333873725150035899}
   m_Layer: 0
   m_Name: Point 38
   m_TagString: Untagged
@@ -2631,20 +2345,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 0}
     weight: 1
     distance: 0.16124511
---- !u!114 &2333873725150035899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947621893939238424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &2286160816696421784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2820,7 +2520,6 @@ GameObject:
   - component: {fileID: 219761372982221987}
   - component: {fileID: 5804342529261078159}
   - component: {fileID: 1661193039656783732}
-  - component: {fileID: 1247307008431559381}
   m_Layer: 0
   m_Name: Point 39
   m_TagString: Untagged
@@ -2926,20 +2625,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 0}
     weight: 1
     distance: 0.15800111
---- !u!114 &1247307008431559381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3038681936194304886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &3204609252157781666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3033,7 +2718,6 @@ GameObject:
   - component: {fileID: 1855026042920714804}
   - component: {fileID: 5350264612356544536}
   - component: {fileID: 990618001148367331}
-  - component: {fileID: 864001235944819778}
   m_Layer: 0
   m_Name: Point 27
   m_TagString: Untagged
@@ -3142,20 +2826,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 2962511921146842621}
     weight: 1
     distance: 0.9985741
---- !u!114 &864001235944819778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3501916537367274977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &3894305048498493679
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,7 +2837,6 @@ GameObject:
   - component: {fileID: 2246301284841275194}
   - component: {fileID: 5525320906362987798}
   - component: {fileID: 805430289594232045}
-  - component: {fileID: 968163752059449676}
   m_Layer: 0
   m_Name: Point 24
   m_TagString: Untagged
@@ -3276,20 +2945,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 8133217541807857355}
     weight: 1
     distance: 1.4157676
---- !u!114 &968163752059449676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3894305048498493679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &4525435621087744538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,7 +3211,6 @@ GameObject:
   - component: {fileID: 7713825217685283519}
   - component: {fileID: 4074796829448698003}
   - component: {fileID: 9154695042520707432}
-  - component: {fileID: 8741187783911730377}
   m_Layer: 0
   m_Name: Point 26
   m_TagString: Untagged
@@ -3665,20 +3319,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 4298652730933064639}
     weight: 1
     distance: 1.4125826
---- !u!114 &8741187783911730377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4767673701051139434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &4806399478542283463
 GameObject:
   m_ObjectHideFlags: 0
@@ -3690,7 +3330,6 @@ GameObject:
   - component: {fileID: 7752080406783350034}
   - component: {fileID: 4041269299731484478}
   - component: {fileID: 9193515380696106693}
-  - component: {fileID: 8779486955085257572}
   m_Layer: 0
   m_Name: Point 25
   m_TagString: Untagged
@@ -3799,20 +3438,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 6350081859541903964}
     weight: 1
     distance: 1.4132037
---- !u!114 &8779486955085257572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4806399478542283463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &5618470438372321993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,7 +3449,6 @@ GameObject:
   - component: {fileID: 7268809568787090716}
   - component: {fileID: 3989743695031850800}
   - component: {fileID: 8133217541807857355}
-  - component: {fileID: 8546727195486045034}
   m_Layer: 0
   m_Name: Point 35
   m_TagString: Untagged
@@ -3933,20 +3557,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 0}
     weight: 1
     distance: 0.16099446
---- !u!114 &8546727195486045034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5618470438372321993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &5790737424270193601
 GameObject:
   m_ObjectHideFlags: 0
@@ -4286,7 +3896,6 @@ GameObject:
   - component: {fileID: 5485670527849249163}
   - component: {fileID: 2278981172018095015}
   - component: {fileID: 6350081859541903964}
-  - component: {fileID: 6801254125470660605}
   m_Layer: 0
   m_Name: Point 36
   m_TagString: Untagged
@@ -4395,20 +4004,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 0}
     weight: 1
     distance: 0.16730398
---- !u!114 &6801254125470660605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7279552667749998174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1 &8920589940569033273
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,7 +4155,6 @@ GameObject:
   - component: {fileID: 6246807620109425883}
   - component: {fileID: 373952030691739383}
   - component: {fileID: 4805375882543648524}
-  - component: {fileID: 4968300239087555245}
   m_Layer: 0
   m_Name: Point 29
   m_TagString: Untagged
@@ -4657,20 +4251,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 2962511921146842621}
     weight: 1
     distance: 0.99857116
---- !u!114 &4968300239087555245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9193589273392560910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404dddf192d3f7641a86dc8ee1010de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soRoad_: {fileID: 11400000, guid: 9905e9e8243e4a04496931e09a0a4d88, type: 2}
-  uiRoadName_: {fileID: 0}
 --- !u!1001 &4257042245714268150
 PrefabInstance:
   m_ObjectHideFlags: 0
