@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1616963987817013590}
   - component: {fileID: 1616963987817013591}
   - component: {fileID: 1616963987817013588}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Minotaur dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}

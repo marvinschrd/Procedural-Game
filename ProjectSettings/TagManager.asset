@@ -7,6 +7,7 @@ TagManager:
   - ennemy
   - Walls
   - room1
+  - Magic
   layers:
   - Default
   - TransparentFX
@@ -18,9 +19,9 @@ TagManager:
   - 
   - Rooms
   - Walls
-  - 
-  - 
-  - 
+  - Magic
+  - Ghost
+  - Enemies
   - 
   - 
   - 

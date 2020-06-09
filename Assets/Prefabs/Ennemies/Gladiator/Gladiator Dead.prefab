@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3735015177187200038}
   - component: {fileID: 3735015177187200033}
   - component: {fileID: 3735015177187200032}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Gladiator Dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}

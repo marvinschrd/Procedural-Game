@@ -179,7 +179,8 @@ MonoBehaviour:
   hurtTime: 1
   deadBody: {fileID: 3735015177187200035, guid: a05389df4f1e8b34295cf10736f442c9,
     type: 3}
-  playablePrefab: {fileID: 0}
+  playablePrefab: {fileID: 644062051470637853, guid: d3825b2c3e8ae8c4aa5d887f9382368b,
+    type: 3}
 --- !u!114 &-67691626478482378
 MonoBehaviour:
   m_ObjectHideFlags: 0

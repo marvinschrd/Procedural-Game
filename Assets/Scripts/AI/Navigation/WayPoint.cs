@@ -37,7 +37,7 @@ public class WayPoint : MonoBehaviour {
         //    }
         //}
 
-#if UNITY_EDITOR
+
         //void OnDrawGizmos()
         //{
         //    Gizmos.color = Color.cyan;
@@ -80,6 +80,6 @@ public class WayPoint : MonoBehaviour {
             Handles.DrawLine(position + Vector3.Cross(dir, Vector3.up) * 0.1f, neighborPos + Vector3.Cross(dir, Vector3.up) * 0.1f);
         }
     }
-#endif
+
 }
 }

@@ -79,7 +79,6 @@ public class BoarController : MonoBehaviour
                 {
                     Debug.Log("getting random path");
                     randomPosition = (Vector3)Random.insideUnitCircle * 3 + transform.position;
-                    //Debug.Log("random position =" + randomPosition);
                     GetPath(randomPosition);
                     choseAnotherRandomPosition = false;
                 }

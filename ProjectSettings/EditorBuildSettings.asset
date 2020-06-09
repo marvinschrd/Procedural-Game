@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProceduralTestScene.unity
     guid: 8b84817fee5974543bb3b5a8c823490e
+  - enabled: 1
+    path: Assets/Scenes/VictoryScene.unity
+    guid: fc219e3715def454ab72208e29efc590
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: a173c5143868b014cb17f02010230e02
   m_configObjects: {}

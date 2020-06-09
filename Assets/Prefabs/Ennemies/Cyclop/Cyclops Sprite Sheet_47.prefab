@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1218431063528368674}
   - component: {fileID: 1218431063528368675}
   - component: {fileID: 1218431063528368684}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cyclops Sprite Sheet_47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
