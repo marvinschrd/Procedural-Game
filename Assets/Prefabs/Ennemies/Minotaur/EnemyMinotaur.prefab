@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2623715512737646176}
   - component: {fileID: 1671863471333198079}
   - component: {fileID: 6344777544017999962}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EnemyMinotaur
   m_TagString: ennemy
   m_Icon: {fileID: 0}
@@ -238,6 +238,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5496034135894013013, guid: e6c806aaff5debe468144869e1e07b54,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5496034135894013015, guid: e6c806aaff5debe468144869e1e07b54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -397,6 +402,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6581030379675870551, guid: f6bb8769ba0f33c4da2fbf571c92a303,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6bb8769ba0f33c4da2fbf571c92a303, type: 3}

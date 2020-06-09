@@ -60,24 +60,22 @@ public class WayPoint : MonoBehaviour {
 
         void OnDrawGizmosSelected() {
         Gizmos.color = Color.cyan;
-        Handles.color = new Color(0.0f, 1.0f, 1.0f, 1f);
-        
-        Handles.DrawSolidDisc(transform.position, Vector3.up, 0.5f);
+       
 
         //if (transform.hasChanged) {
         //    OnValidate();
         //}
         
         if (neighbors == null) return;
-        Handles.color = new Color(0.0f, 1.0f, 1.0f, 1f);
+       
         Vector3 position = transform.position;
         
         foreach (Link neighbor in neighbors) {
             Vector3 neighborPos = neighbor.wayPoint.transform.position;
-            Handles.Label((position + neighborPos) / 2.0f, neighbor.weight + " + " + neighbor.distance.ToString("0.00"));
+           
             Vector3 dir = (position - neighborPos).normalized;
             
-            Handles.DrawLine(position + Vector3.Cross(dir, Vector3.up) * 0.1f, neighborPos + Vector3.Cross(dir, Vector3.up) * 0.1f);
+            
         }
     }
 

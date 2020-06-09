@@ -39,7 +39,7 @@ public class Rooms : MonoBehaviour
         neighbours = new List<EnnemiesSpawner>();
         contacts = new List<ContactPoint2D>();
         inBetweenPoints = new List<Vector2>();
-
+        body = GetComponent<Rigidbody2D>();
     }
 
     enum Step
@@ -67,6 +67,7 @@ public class Rooms : MonoBehaviour
                 }
                 break;
             case Step.GET_NEIGHBOURS:  // instantiate a circle cast to detect and store rooms next to this room
+                
                 Debug.Log("GETTING NEIGBOURS");
                 collider.enabled = false;
                 Vector2 colliderSize = new Vector2(transform.localScale.x, transform.localScale.y);

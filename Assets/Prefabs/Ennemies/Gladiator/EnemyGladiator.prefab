@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9209141555526377668}
   - component: {fileID: -67691626478482378}
   - component: {fileID: 5046617517313265902}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EnemyGladiator
   m_TagString: ennemy
   m_Icon: {fileID: 0}
@@ -301,6 +301,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6581030379675870551, guid: f6bb8769ba0f33c4da2fbf571c92a303,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6bb8769ba0f33c4da2fbf571c92a303, type: 3}

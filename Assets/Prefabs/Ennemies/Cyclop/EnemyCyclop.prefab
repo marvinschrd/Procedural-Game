@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -8564590414044629515}
   - component: {fileID: -5185029559936679286}
   - component: {fileID: 4087906329839778073}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EnemyCyclop
   m_TagString: ennemy
   m_Icon: {fileID: 0}
@@ -271,6 +271,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496034135894013013, guid: e6c806aaff5debe468144869e1e07b54,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5496034135894013014, guid: e6c806aaff5debe468144869e1e07b54,
         type: 3}
